@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kings Furniture | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://sets.hugeicons.com/YOUR-SET-ID.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/grid-guide.css">
+</head>
+<body>
+
+  <div class="grid-container">
+    <!-- 12 columns for the guide -->
+    <div class="grid">
+      <!-- These are just visual guides -->
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+  </div>
+
+
+   <!-- Navigation Bar / HEADER - kinda sus to me😂 -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="./images/kings-group.webp" alt="Logo"></a>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">News</a>
+      </nav>
+
+      <div class="contact-btn">
+        <button>Contact</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Transform Your Space with Timeless Furniture</h1>
+    <p>Discover elegant designs that bring comfort and style into your home.</p>
+    <button class="hero-btn">Explore Collection</button>
+  </div>
+  <div class="scroll-down" onclick="scrollToNextSection()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#FFFF66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+    </svg>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="featured-products next-section">
+  <h2 class="section-title">Featured Categories</h2>
+
+  <div class="categories-grid">
+    <div class="category-item">
+      <div class="category-card">
+        <img src="./images/products/living-room/living-set-10a.webp" alt="Living Room Furniture">
+      </div>
+      <h3>Living Room</h3>
+    </div>
+
+    <div class="category-item">
+      <div class="category-card">
+        <img src="images/bedroom.jpg" alt="Bedroom Furniture">
+      </div>
+      <h3>Bedroom</h3>
+    </div>
+
+    <div class="category-item">
+      <div class="category-card">
+        <img src="images/office.jpg" alt="Office Furniture">
+      </div>
+      <h3>Office</h3>
+    </div>
+
+    <div class="category-item">
+      <div class="category-card">
+        <img src="images/outdoor.jpg" alt="Outdoor Furniture">
+      </div>
+      <h3>Outdoor</h3>
+    </div>
+
+    <div class="category-item">
+      <div class="category-card">
+        <img src="images/kitchen.jpg" alt="Kitchen Furniture">
+      </div>
+      <h3>Kitchen</h3>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./javascript/script.js"></script>
+<button id="scrollTopBtn" title="Go to top">↑</button>
+</body>
+</html>
