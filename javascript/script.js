@@ -6,11 +6,13 @@ document.addEventListener("keydown", (e) => {
 });
 
 // This SHRINKS the header when scrolled
+const header = document.querySelector('.site-header');
+
 window.addEventListener('scroll', () => {
   if (window.scrollY > 100) {
-    Headers.classList.add('shrink');
+    header.classList.add('shrink');
   } else {
-    Headers.classList.remove('shrink');
+    header.classList.remove('shrink');
   }
 });
 

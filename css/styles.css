@@ -19,6 +19,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   background-color: var(--color-bg);
   font-family: var(--font-body);
@@ -112,7 +113,7 @@ a:hover {
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  left: -30px;
+  padding-left: 0;
 }
 
 .logo img{
@@ -147,12 +148,6 @@ a:hover {
 }
 
 /* When header shrinks */
-.site-header.shrink .contact-btn button {
-  padding: 8px 18px;
-  font-size: 0.9rem;
-  transform: scale(0.95);
-}
-
 .site-header.shrink .contact-btn button {
   padding: 8px 18px;
   font-size: 0.9rem;
