@@ -20,13 +20,14 @@ window.addEventListener('scroll', () => {
 function scrollToNextSection() {
   const nextSection = document.querySelector('.next-section');
   if (nextSection) {
-    nextSection.scrollIntoView({ behavior: 'smooth' });
+    nextSection.scrollIntoView(); // No need for { behavior: 'smooth' }
   }
 }
 
 // Scroll animation for elements
 const animatedElements = document.querySelectorAll('.scroll-animate');
 
+let scrollTimeout;
 const revealOnScroll = () => {
   animatedElements.forEach(el => {
     const rect = el.getBoundingClientRect();
@@ -36,52 +37,32 @@ const revealOnScroll = () => {
   });
 };
 
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
+window.addEventListener('scroll', () => {
+  if (scrollTimeout) return;
+  scrollTimeout = setTimeout(() => {
+    revealOnScroll();
+    scrollTimeout = null;
+  }, 100);
+});
 
+// Mobile menu toggle
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if (mobileMenuToggle) {
+  mobileMenuToggle.addEventListener('click', () => {
+    mobileMenuToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+  
+  // Close menu when clicking on a link
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenuToggle.classList.remove('active');
+      navLinks.classList.remove('active');
+    });
+  });
+}
 
 
 // --- SCROLL TO TOP BUTTON ---
@@ -96,9 +77,5 @@ window.addEventListener('scroll', () => {
 });
 
 scrollTopBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
+  window.scrollTo({ top: 0 }); // No need for behavior: 'smooth'
 });
-

@@ -4,15 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kings Furniture | Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="./css/grid-guide.css">
   <meta name="description" content="Kings Furniture - Transform your space with timeless furniture designs">
   <meta name="keywords" content="furniture, home decor, living room, bedroom">
   <meta property="og:title" content="Kings Furniture | Home">
   <meta property="og:description" content="Discover elegant designs that bring comfort and style">
-  <meta property="og:image" content="./images/og-image.jpg">
+  <meta property="og:image" content="./images/kings-group.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kingsfurnituregh.com">
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="preload" as="image" href="./images/products/living-room/living-set-2a.webp">
 </head>
 <body>
 
@@ -53,6 +56,12 @@
       <div class="contact-btn">
         <button>Contact</button>
       </div>
+      <!-- Add this inside .container, after .contact-btn -->
+<button class="mobile-menu-toggle" aria-label="Toggle menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
     </div>
   </header>
 
@@ -64,44 +73,44 @@
     <p>Discover elegant designs that bring comfort and style into your home.</p>
     <button class="hero-btn">Explore Collection</button>
   </div>
-  <div class="scroll-down" onclick="scrollToNextSection()" aria-label="Scroll to products section">
+  <button class="scroll-down" onclick="scrollToNextSection()" aria-label="Scroll to products section">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#FFFF66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
     <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
     </svg>
-  </div>
+  </button>
 </section>
 
 <!-- FEATURED PRODUCTS -->
 <section class="featured-products next-section">
   <div class="container">
     <div class="products-header">
-      <h2 class="section-title" class="section-title scroll-animate">Discover our products</h2>
-      <p class="section-subtitle" class="section-subtitle scroll-animate">We curate how I imagine my dream house would look like and feel. Our products are inspired by the finest ingredients.</p>
+      <h2 class="section-title scroll-animate">Discover our products</h2>
+      <p class="section-subtitle scroll-animate">We curate how I imagine my dream house would look like and feel. Our products are inspired by the finest ingredients.</p>
     </div>
 
     <div class="products-grid">
       <div class="product-card">
-        <img src="./images/products/living-room/living-set-10a.webp" alt="Living Room">
+        <img src="./images/products/living-room/living-set-10a.webp" alt="Living Room" loading="lazy">
         <div class="product-label">Living Room</div>
       </div>
 
       <div class="product-card">
-        <img src="./images/products/bedroom/bedroom-9b.webp" alt="Bedroom">
+        <img src="./images/products/bedroom/bedroom-9b.webp" alt="Bedroom" loading="lazy">
         <div class="product-label">Bedroom</div>
       </div>
 
       <div class="product-card">
-        <img src="./images/products/kitchen/kitchen-set-16c.jpg" alt="Kitchen">
+        <img src="./images/products/kitchen/kitchen-set-16c.jpg" alt="Kitchen" loading="lazy">
         <div class="product-label">Kitchen</div>
       </div>
 
       <div class="product-card">
-        <img src="./images/products/dining/dining-1a.webp" alt="Dining">
+        <img src="./images/products/dining/dining-1a.webp" alt="Dining" loading="lazy">
         <div class="product-label">Dining</div>
       </div>
 
       <div class="product-card">
-        <img src="./images/products/office/office-set-2b.webp" alt="Office">
+        <img src="./images/products/office/office-set-2b.webp" alt="Office" loading="lazy">
         <div class="product-label">Office</div>
       </div>
     </div>
