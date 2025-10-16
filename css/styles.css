@@ -19,7 +19,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -91,22 +91,15 @@ a:focus:not(:focus-visible) {
   position: relative;
 }
 
-@media (max-width: 768px) {
-  .container {
-    width: 90%; /* More width on mobile */
-  }
-}
-
-/* HEADER */
-/* --- FROSTED GLASS EFFECT --- */
+/* HEADER - FROSTED GLASS EFFECT */
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(30, 39, 97, 0.7);  /* very light tint from your primary color */
-  backdrop-filter: blur(12px); /* glass blur */
-  -webkit-backdrop-filter: blur(12px); /* for SAFARI support- These iOS users charr */
+  background: rgba(30, 39, 97, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 20px 0;
@@ -115,12 +108,11 @@ a:focus:not(:focus-visible) {
 
 @supports not (backdrop-filter: blur(12px)) {
   .site-header {
-    background: rgba(30, 39, 97, 0.95); /* More opaque fallback */
+    background: rgba(30, 39, 97, 0.95);
   }
 }
 
-
-/* Make the header shrink */
+/* Header shrink effect */
 .site-header.shrink {
   padding: 10px 0;
   background: rgba(30, 39, 97, 0.7);
@@ -130,8 +122,7 @@ a:focus:not(:focus-visible) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-
-/* Placing the logo on the LEFT like always */
+/* Logo */
 .logo {
   grid-column: 1 / span 3;
   display: flex;
@@ -141,50 +132,19 @@ a:focus:not(:focus-visible) {
   padding-left: 0;
 }
 
-.logo img{
+.logo img {
   width: 120px;
   height: auto;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* For when the header shrinks */
 .site-header.shrink .logo img {
-  width: 100px; /* Becomes SMALLER on scroll*/
+  width: 100px;
   transform: translateY(-3px);
   opacity: 0.9;
 }
 
-/* --- Shrink effect on the nav-links --- */
-.nav-links a {
-  font-size: 1rem;
-  letter-spacing: 0.3px;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* When header shrinks */
-.site-header.shrink .nav-links a {
-  font-size: 0.9rem;
-  letter-spacing: 0;
-}
-
-/* --- shrink effect on contact button--- */
-.contact-btn button {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* When header shrinks */
-.site-header.shrink .contact-btn button {
-  padding: 8px 18px;
-  font-size: 0.9rem;
-  transform: scale(0.95);
-  border-radius: 99px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-
-
-
-/* CENTERING the nav-links here cos why not */
+/* Navigation Links */
 .nav-links {
   grid-column: 4 / span 6;
   display: flex;
@@ -196,17 +156,18 @@ a:focus:not(:focus-visible) {
   position: relative;
   text-decoration: none;
   color: #ffffff;
-  text-decoration: none;
   font-family: var(--font-body);
   font-weight: 500;
-  transition: color 0.3s ease;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-links a:hover {
   color: var(--color-highlight);
 }
 
-/* CENTER-OUT underline */
+/* Center-out underline */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -214,8 +175,8 @@ a:focus:not(:focus-visible) {
   bottom: -4px;
   width: 0%;
   height: 3px;
-  background-color: var(--color-highlight); 
-  box-shadow: 0 0 8px var(--color-highlight); /* subtle glow */
+  background-color: var(--color-highlight);
+  box-shadow: 0 0 8px var(--color-highlight);
   transition: all 0.4s ease;
   transform: translateX(-50%);
   border-radius: 2px;
@@ -225,19 +186,23 @@ a:focus:not(:focus-visible) {
   width: 100%;
 }
 
-/* Active link underline */
 .nav-links a.active::after {
   width: 100%;
 }
 
-/* Now the Contact Button on the RIGHT-SIDE */
+.site-header.shrink .nav-links a {
+  font-size: 0.9rem;
+  letter-spacing: 0;
+}
+
+/* Contact Button */
 .contact-btn {
   grid-column: 11 / span 2;
   display: flex;
   justify-content: flex-end;
 }
 
-.contact-btn button{
+.contact-btn button {
   background: var(--color-primary);
   font-family: var(--font-heading);
   color: #fff;
@@ -247,7 +212,7 @@ a:focus:not(:focus-visible) {
   border-radius: 85px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-btn button:hover {
@@ -257,7 +222,15 @@ a:focus:not(:focus-visible) {
   transform: translateY(-2px);
 }
 
-/* Mobile Menu Toggle - Hidden by default */
+.site-header.shrink .contact-btn button {
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  transform: scale(0.95);
+  border-radius: 99px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Mobile Menu Toggle */
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
@@ -277,58 +250,11 @@ a:focus:not(:focus-visible) {
   transition: all 0.3s ease;
 }
 
-/* Mobile Styles */
-@media (max-width: 992px) {
-  .mobile-menu-toggle {
-    display: flex;
-    grid-column: 11 / span 2;
-    justify-self: end;
-  }
-  
-  .nav-links {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100vh;
-    background: rgba(30, 39, 97, 0.98);
-    backdrop-filter: blur(20px);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 1000;
-  }
-  
-  .nav-links.active {
-    right: 0;
-  }
-  
-  .contact-btn {
-    display: none;
-  }
-  
-  /* Hamburger animation when active */
-  .mobile-menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
-  }
-  
-  .mobile-menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .mobile-menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
-  }
-}
-
-
-/* ===== HERO SECTION ===== */
+/* HERO SECTION */
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;  /* This is like full screen height---bruhh it's the full viewport height, if you don't understand Google that shit */
+  height: 100vh;
   background: url('../images/products/living-room/living-set-2a.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -336,16 +262,14 @@ a:focus:not(:focus-visible) {
   overflow: hidden;
 }
 
-/* Overlay for a soft colour tint and readability....damn I sound professional */
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(30, 39, 97, 0.45); /* Soft tint using the primary colour*/
+  background: rgba(30, 39, 97, 0.45);
   backdrop-filter: blur(2px);
   z-index: 1;
 }
 
-/* HERO Content */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -356,7 +280,6 @@ a:focus:not(:focus-visible) {
   animation: fadeInUp 1s ease;
 }
 
-/* HEADLINE ----AHH very sus huh */
 .hero-content h1 {
   font-family: var(--font-heading);
   font-size: 3rem;
@@ -376,7 +299,6 @@ a:focus:not(:focus-visible) {
   border-radius: 2px;
 }
 
-/* PARAGRAPH --- bro I need some paracetamol, my head aches */
 .hero-content p {
   font-family: var(--font-body);
   font-size: 1.2rem;
@@ -385,7 +307,6 @@ a:focus:not(:focus-visible) {
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* HERO BUTTON */
 .hero-btn {
   background: var(--color-highlight);
   color: var(--color-primary);
@@ -397,7 +318,7 @@ a:focus:not(:focus-visible) {
   cursor: pointer;
   font-size: 1rem;
   transition: all 0.3s ease;
-} 
+}
 
 .hero-btn:hover {
   background: var(--color-accent);
@@ -422,16 +343,16 @@ a:focus:not(:focus-visible) {
 }
 
 .scroll-down svg {
-  width: 48px;  /* increased from 32px */
+  width: 48px;
   height: 48px;
   stroke: #FFFF66;
-  filter: drop-shadow(0 0 6px rgba(255, 255, 102, 0.6)); /* soft glow */
+  filter: drop-shadow(0 0 6px rgba(255, 255, 102, 0.6));
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .scroll-down:hover svg {
   transform: scale(1.1);
-  filter: drop-shadow(0 0 10px rgba(255, 255, 102, 0.9)); /* stronger glow on hover */
+  filter: drop-shadow(0 0 10px rgba(255, 255, 102, 0.9));
 }
 
 .scroll-down:hover {
@@ -461,8 +382,6 @@ a:focus:not(:focus-visible) {
   }
 }
 
-
-/* Animation */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -474,7 +393,7 @@ a:focus:not(:focus-visible) {
   }
 }
 
-/* ===== FEATURED PRODUCTS SECTION ===== */
+/* FEATURED PRODUCTS SECTION */
 .featured-products {
   background-color: var(--color-accent);
   padding: 100px 0;
@@ -502,7 +421,6 @@ a:focus:not(:focus-visible) {
   margin-bottom: 40px;
 }
 
-/* Bento-box Grid Layout */
 .products-grid {
   grid-column: 1 / -1;
   display: grid;
@@ -513,13 +431,21 @@ a:focus:not(:focus-visible) {
 
 /* Product Card Styling */
 .product-card {
-  background: #fff;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   cursor: pointer;
+}
+
+@keyframes shimmer {
+  to {
+    background-position-x: -200%;
+  }
 }
 
 .product-card:hover {
@@ -532,7 +458,12 @@ a:focus:not(:focus-visible) {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+.product-card img.loaded {
+  opacity: 1;
 }
 
 .product-card:hover img {
@@ -580,7 +511,7 @@ a:focus:not(:focus-visible) {
   min-height: 350px;
 }
 
-/* Scroll Animation Base */
+/* Scroll Animation */
 .scroll-animate {
   opacity: 0;
   transform: translateY(30px);
@@ -592,130 +523,7 @@ a:focus:not(:focus-visible) {
   transform: translateY(0);
 }
 
-
-@media (max-width: 992px) {
-  .products-grid {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  
-  .product-card:nth-child(1),
-  .product-card:nth-child(2),
-  .product-card:nth-child(3) {
-    grid-column: span 6;
-    min-height: 300px;
-  }
-  
-  .product-card:nth-child(4),
-  .product-card:nth-child(5) {
-    grid-column: span 6;
-    min-height: 300px;
-  }
-}
-
-@media (max-width: 600px) {
-  .products-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .product-card {
-    grid-column: 1 / -1 !important;
-    min-height: 250px !important;
-  }
-  
-  .featured-products .section-title {
-    grid-column: 1 / -1;
-    font-size: 2rem;
-  }
-  
-  .featured-products .section-subtitle {
-    grid-column: 1 / -1;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-  .logo img {
-    width: 90px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2rem;
-    line-height: 1.3;
-  }
-  
-  .hero-content p {
-    font-size: 1rem;
-  }
-  
-  .hero-btn {
-    padding: 10px 24px;
-    font-size: 0.9rem;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- SCROLL TO TOP BUTTON --- */
+/* Scroll to Top Button */
 #scrollTopBtn {
   position: fixed;
   bottom: 30px;
@@ -747,4 +555,108 @@ a:focus:not(:focus-visible) {
   opacity: 1;
   visibility: visible;
   bottom: 40px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  /* Mobile menu */
+  .mobile-menu-toggle {
+    display: flex;
+    grid-column: 11 / span 2;
+    justify-self: end;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: rgba(30, 39, 97, 0.98);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  /* Hamburger animation */
+  .mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+
+  .mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  /* Products grid */
+  .products-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .product-card:nth-child(1),
+  .product-card:nth-child(2),
+  .product-card:nth-child(3) {
+    grid-column: span 6;
+    min-height: 300px;
+  }
+
+  .product-card:nth-child(4),
+  .product-card:nth-child(5) {
+    grid-column: span 6;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    grid-column: 1 / -1 !important;
+    min-height: 250px !important;
+  }
+
+  .featured-products .section-title {
+    font-size: 2rem;
+  }
 }

@@ -1,33 +1,18 @@
 // Dev tool: Press 'G' key to toggle grid overlay (remove in production)
 document.addEventListener("keydown", (e) => {
-  if (e.key === "g") {
+  if (e.key === "g" || e.key === "G") {
     document.body.classList.toggle("show-grid");
   }
 });
 
-// This SHRINKS the header when scrolled
+// Cache DOM elements for better performance
 const header = document.querySelector('.site-header');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 100) {
-    header.classList.add('shrink');
-  } else {
-    header.classList.remove('shrink');
-  }
-});
-
-// Scroll to next section after hero section
-function scrollToNextSection() {
-  const nextSection = document.querySelector('.next-section');
-  if (nextSection) {
-    nextSection.scrollIntoView(); // No need for { behavior: 'smooth' }
-  }
-}
-
-// Scroll animation for elements
+const scrollTopBtn = document.getElementById('scrollTopBtn');
 const animatedElements = document.querySelectorAll('.scroll-animate');
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-let scrollTimeout;
+// Scroll animation reveal function
 const revealOnScroll = () => {
   animatedElements.forEach(el => {
     const rect = el.getBoundingClientRect();
@@ -37,22 +22,66 @@ const revealOnScroll = () => {
   });
 };
 
+// Combined scroll handler for better performance
+const handleScroll = () => {
+  const scrollY = window.scrollY;
+  
+  // Header shrink effect
+  if (scrollY > 100) {
+    header.classList.add('shrink');
+  } else {
+    header.classList.remove('shrink');
+  }
+  
+  // Scroll to top button visibility
+  if (scrollY > 400) {
+    scrollTopBtn.classList.add('show');
+  } else {
+    scrollTopBtn.classList.remove('show');
+  }
+  
+  // Reveal scroll animations
+  revealOnScroll();
+};
+
+// Throttled scroll event listener (runs every 50ms max)
+let scrollTimeout;
 window.addEventListener('scroll', () => {
   if (scrollTimeout) return;
   scrollTimeout = setTimeout(() => {
-    revealOnScroll();
+    handleScroll();
     scrollTimeout = null;
-  }, 100);
+  }, 50);
 });
 
-// Mobile menu toggle
-const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+// Run handlers on page load
+window.addEventListener('load', () => {
+  handleScroll();
+  revealOnScroll();
+});
 
-if (mobileMenuToggle) {
+// Scroll to next section smoothly
+function scrollToNextSection() {
+  const nextSection = document.querySelector('.next-section');
+  if (nextSection) {
+    nextSection.scrollIntoView();
+  }
+}
+
+// Scroll to top button
+scrollTopBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0 });
+});
+
+// Mobile menu toggle with accessibility
+if (mobileMenuToggle && navLinks) {
   mobileMenuToggle.addEventListener('click', () => {
-    mobileMenuToggle.classList.toggle('active');
+    const isExpanded = mobileMenuToggle.classList.toggle('active');
     navLinks.classList.toggle('active');
+    mobileMenuToggle.setAttribute('aria-expanded', isExpanded);
+    
+    // Prevent body scroll when menu is open
+    document.body.style.overflow = isExpanded ? 'hidden' : '';
   });
   
   // Close menu when clicking on a link
@@ -60,21 +89,42 @@ if (mobileMenuToggle) {
     link.addEventListener('click', () => {
       mobileMenuToggle.classList.remove('active');
       navLinks.classList.remove('active');
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
     });
+  });
+  
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('active') && 
+        !navLinks.contains(e.target) && 
+        !mobileMenuToggle.contains(e.target)) {
+      mobileMenuToggle.classList.remove('active');
+      navLinks.classList.remove('active');
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+  });
+  
+  // Close menu with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+      mobileMenuToggle.classList.remove('active');
+      navLinks.classList.remove('active');
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
   });
 }
 
-// --- SCROLL TO TOP BUTTON ---
-const scrollTopBtn = document.getElementById('scrollTopBtn');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 400) {
-    scrollTopBtn.classList.add('show');
-  } else {
-    scrollTopBtn.classList.remove('show');
+// Image loading effect
+document.querySelectorAll('.product-card img').forEach(img => {
+  img.addEventListener('load', () => {
+    img.classList.add('loaded');
+  });
+  
+  // If already cached/loaded
+  if (img.complete) {
+    img.classList.add('loaded');
   }
-});
-
-scrollTopBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0 }); // No need for behavior: 'smooth'
 });

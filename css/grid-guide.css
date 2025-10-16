@@ -1,16 +1,15 @@
-/* Centered grid container */
+/* Grid Guide Overlay - Development Tool */
 .grid-container {
   width: 75%;
   margin: 0 auto;
-  position: fixed; /* change from relative to fixed */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 100vh;
   pointer-events: none;
-  z-index: 9999; /* make it sit above everything but still unclickable */
+  z-index: 9999;
 }
-
 
 /* 12-column grid */
 .grid {
@@ -26,9 +25,16 @@
   transition: opacity 0.3s ease;
 }
 
-/* When toggled ON (show-grid), show deep ash columns */
+/* Show grid when toggled (Press 'G' key) */
 body.show-grid .col {
-  background-color: rgba(45, 45, 45, 0.25); /* deep ash overlay */
+  background-color: rgba(45, 45, 45, 0.25);
   border: 1px dashed rgba(45, 45, 45, 0.4);
   opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid-container {
+    width: 90%;
+  }
 }
