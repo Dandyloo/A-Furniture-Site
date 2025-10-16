@@ -1,4 +1,4 @@
-// This is just to toggle the column grid layout...chale I have to make it look precise. WILL DELETE LATER!!!
+// Dev tool: Press 'G' key to toggle grid overlay (remove in production)
 document.addEventListener("keydown", (e) => {
   if (e.key === "g") {
     document.body.classList.toggle("show-grid");
@@ -63,7 +63,6 @@ if (mobileMenuToggle) {
     });
   });
 }
-
 
 // --- SCROLL TO TOP BUTTON ---
 const scrollTopBtn = document.getElementById('scrollTopBtn');

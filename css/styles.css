@@ -59,6 +59,26 @@ a:hover {
   color: var(--color-primary);
 }
 
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+  outline: 3px solid var(--color-highlight);
+  outline-offset: 2px;
+}
+
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.product-card:focus {
+  outline: 3px solid var(--color-highlight);
+  outline-offset: 4px;
+}
+
+.nav-links a:focus::after {
+  width: 100%;
+}
+
 .container {
   width: 75%;
   max-width: 1400px;

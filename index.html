@@ -46,7 +46,16 @@
         <a href="index.html"><img src="./images/kings-group.webp" alt="Logo"></a>
       </div>
 
-      <nav class="nav-links">
+      <button class="mobile-menu-toggle" 
+        aria-label="Toggle menu" 
+        aria-expanded="false"
+        aria-controls="main-navigation">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+      <nav class="nav-links" id="main-navigation">
         <a href="index.html" class="active">Home</a>
         <a href="#">About</a>
         <a href="#">Products</a>
@@ -56,12 +65,7 @@
       <div class="contact-btn">
         <button>Contact</button>
       </div>
-      <!-- Add this inside .container, after .contact-btn -->
-<button class="mobile-menu-toggle" aria-label="Toggle menu">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
+
     </div>
   </header>
 
