@@ -388,98 +388,165 @@ a:hover {
 
 /* ===== FEATURED PRODUCTS SECTION ===== */
 .featured-products {
-  background-color: #f9f9f9;
+  background-color: var(--color-accent);
   padding: 100px 0;
-  text-align: center;
+  position: relative;
 }
 
 .featured-products .section-title {
   font-family: "Outfit", sans-serif;
-  font-size: 2.5rem;
-  color: #1E2761;
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.featured-products .section-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 60px;
   text-align: center;
+  grid-column: 1 / -1;
+  line-height: 1.6;
 }
 
-.categories-grid {
+.products-header {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-  justify-items: center;
-  align-items: start;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+/* Bento-box Grid Layout */
+.products-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
   width: 100%;
 }
 
-.categories-item {
-  text-align: center;
-}
-
-/* Card Styling */
-.category-card {
+/* Product Card Styling */
+.product-card {
   background: #fff;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;
-  max-width: 360px;
+  position: relative;
+  cursor: pointer;
 }
 
-.category-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
-.category-card img {
+.product-card img {
   width: 100%;
-  height: 250px;
+  height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease;
 }
 
-.category-card h3 {
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 12px 20px;
+  border-radius: 8px;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: #1E2761;
-  margin: 20px 0;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.category-card:hover h3 {
-  color: #408EC6;
-  
+/* Grid Positioning - Bento Box Layout */
+.product-card:nth-child(1) {
+  grid-column: 1 / span 4;
+  min-height: 400px;
 }
 
-/* Optional: "View All Categories" button styling (if added later) */
-.view-all-btn {
-  margin-top: 50px;
-  display: inline-block;
-  background-color: #1E2761;
-  color: white;
-  font-family: "Outfit", sans-serif;
-  font-weight: 600;
-  padding: 14px 36px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
+.product-card:nth-child(2) {
+  grid-column: 5 / span 4;
+  min-height: 400px;
 }
 
-.view-all-btn:hover {
-  background-color: #408EC6;
-  transform: translateY(-2px);
+.product-card:nth-child(3) {
+  grid-column: 9 / span 4;
+  min-height: 400px;
 }
+
+.product-card:nth-child(4) {
+  grid-column: 1 / span 6;
+  min-height: 350px;
+}
+
+.product-card:nth-child(5) {
+  grid-column: 7 / span 6;
+  min-height: 350px;
+}
+
+/* Scroll Animation Base */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 @media (max-width: 992px) {
-  .categories-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .products-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .product-card:nth-child(1),
+  .product-card:nth-child(2),
+  .product-card:nth-child(3) {
+    grid-column: span 6;
+    min-height: 300px;
+  }
+  
+  .product-card:nth-child(4),
+  .product-card:nth-child(5) {
+    grid-column: span 6;
+    min-height: 300px;
   }
 }
 
 @media (max-width: 600px) {
-  .categories-grid {
+  .products-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .product-card {
+    grid-column: 1 / -1 !important;
+    min-height: 250px !important;
+  }
+  
+  .featured-products .section-title {
+    grid-column: 1 / -1;
+    font-size: 2rem;
+  }
+  
+  .featured-products .section-subtitle {
+    grid-column: 1 / -1;
   }
 }
 
