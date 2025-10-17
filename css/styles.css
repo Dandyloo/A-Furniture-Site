@@ -787,8 +787,8 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
 .about-image-3 {
   width: 45%;
   height: 200px;
-  top: 400px;
-  left: 55%;
+  top: 415px;
+  left: 72%;
   z-index: 1;
 }
 

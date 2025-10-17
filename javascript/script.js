@@ -117,8 +117,8 @@ if (mobileMenuToggle && navLinks) {
   });
 }
 
-// Image loading effect
-document.querySelectorAll('.product-card img').forEach(img => {
+// Image loading effect - for ALL images on the page
+document.querySelectorAll('.product-card img, .about-images img').forEach(img => {
   img.addEventListener('load', () => {
     img.classList.add('loaded');
   });
