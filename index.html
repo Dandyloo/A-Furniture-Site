@@ -96,6 +96,7 @@
           aria-label="Toggle menu"
           aria-expanded="false"
           aria-controls="main-navigation"
+          type="button"
         >
           <span></span>
           <span></span>
@@ -120,6 +121,7 @@
         class="scroll-down"
         onclick="scrollToNextSection()"
         aria-label="Scroll to products section"
+        type="button"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -269,8 +271,120 @@
       </div>
     </section>
 
+    <!-- Why Choose Us Section -->
+<!-- Add this section after the About Section in index.html -->
+
+<section class="why-choose-us">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="why-header">
+      <span class="why-tag scroll-animate">Why Choose Us</span>
+      <h2 class="why-title scroll-animate">
+        Excellence in Every Detail
+      </h2>
+      <p class="why-subtitle scroll-animate">
+        We don't just build furniture — we craft experiences that last. Here's what sets Kings Furniture apart.
+      </p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="features-grid">
+      <!-- Feature 1 -->
+      <div class="feature-card scroll-animate">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20M2 12h20"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <h3 class="feature-title">20+ Years of Expertise</h3>
+        <p class="feature-description">
+          Two decades of craftsmanship excellence. We've perfected the art of furniture design and manufacturing across Ghana.
+        </p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-card scroll-animate">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+            <line x1="12" y1="22.08" x2="12" y2="12"/>
+          </svg>
+        </div>
+        <h3 class="feature-title">Custom & Ready-Made</h3>
+        <p class="feature-description">
+          Whether you need bespoke designs tailored to your vision or ready-to-go collections, we deliver both with precision.
+        </p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature-card scroll-animate">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+        </div>
+        <h3 class="feature-title">Premium Quality Materials</h3>
+        <p class="feature-description">
+          Every piece uses carefully selected materials built to withstand daily use while maintaining timeless beauty.
+        </p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="feature-card scroll-animate">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+        </div>
+        <h3 class="feature-title">Delivery Across Ghana</h3>
+        <p class="feature-description">
+          From Accra to Kumasi and beyond — we deliver and install your furniture with care, wherever you are in Ghana.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call-to-Action Section -->
+<!-- Add this section after the Why Choose Us Section in index.html -->
+
+<section class="cta-section">
+  <div class="cta-overlay"></div>
+  <div class="container">
+    <div class="cta-content">
+      <h2 class="cta-title scroll-animate">
+        Ready to Transform Your Space?
+      </h2>
+      <p class="cta-subtitle scroll-animate">
+        Let's bring your vision to life with furniture that combines style, comfort, and durability. Whether it's a custom design or a ready-made piece, we're here to help.
+      </p>
+      <div class="cta-buttons scroll-animate">
+        <button class="cta-btn cta-primary">
+          Browse Products
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+        <button class="cta-btn cta-secondary">
+          Get a Quote
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- Scroll to Top Button -->
-    <button id="scrollTopBtn" title="Go to top">↑</button>
+    <button id="scrollTopBtn" title="Go to top" type="button">↑</button>
 
     <!-- JavaScript -->
     <script src="./javascript/script.js"></script>
