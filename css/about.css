@@ -1,5 +1,11 @@
 /* ABOUT PAGE SPECIFIC STYLES */
 
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 /* PAGE HERO */
 .page-hero {
   position: relative;
@@ -28,6 +34,7 @@
   text-align: center;
   position: relative;
   z-index: 2;
+  padding: 0 20px;
 }
 
 .page-title {
@@ -61,6 +68,7 @@
 .our-story {
   padding: 120px 0;
   background: #ffffff;
+  overflow: hidden;
 }
 
 .our-story .container {
@@ -68,6 +76,8 @@
   grid-template-columns: repeat(12, 1fr);
   gap: 60px;
   align-items: center;
+  width: 100%;
+  max-width: 100%;
 }
 
 .story-content {
@@ -117,7 +127,7 @@
 .story-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -125,12 +135,15 @@
 .mission-vision {
   padding: 100px 0;
   background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+  overflow: hidden;
 }
 
 .mission-vision .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 40px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .mv-card {
@@ -213,6 +226,7 @@
 .our-values {
   padding: 120px 0;
   background: #ffffff;
+  overflow: hidden;
 }
 
 .values-header {
@@ -336,18 +350,18 @@
   }
 
   .our-story .container {
-    gap: 0;
+    gap: 40px;
   }
 
   .story-content {
     grid-column: 1 / -1;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .story-image {
     grid-column: 1 / -1;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
   }
 
@@ -381,204 +395,16 @@
 @media (max-width: 768px) {
   .page-hero {
     height: 40vh;
-    min-height: 300px;
-    margin-top: 60px;
-  }
-
-  .page-title {
-    font-size: 2rem;
-    margin-bottom: 12px;
-  }
-
-  .page-breadcrumb {
-    font-size: 0.9rem;
-  }
-
-  .our-story {
-    padding: 80px 0;
-  }
-
-  .our-story .container {
-    gap: 0;
-  }
-
-  .story-content {
-    grid-column: 1 / -1;
-    text-align: left;
-    margin-bottom: 40px;
-  }
-
-  .story-image {
-    grid-column: 1 / -1;
-    max-width: 100%;
-    height: 300px;
-  }
-
-  .story-title,
-  .values-title {
-    font-size: 2rem;
-  }
-
-  .story-text {
-    font-size: 1rem;
-  }
-
-  .mission-vision {
-    padding: 70px 0;
-  }
-
-  .mv-card {
-    padding: 40px 30px;
-  }
-
-  .mv-icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 25px;
-  }
-
-  .mv-icon svg {
-    width: 35px;
-    height: 35px;
-  }
-
-  .mv-title {
-    font-size: 1.6rem;
-  }
-
-  .mv-text {
-    font-size: 1rem;
-  }
-
-  .our-values {
-    padding: 80px 0;
-  }
-
-  .values-header {
-    margin-bottom: 50px;
-  }
-
-  .value-card {
-    grid-column: span 12;
-    padding: 35px 25px;
-  }
-
-  .value-number {
-    font-size: 2.5rem;
-  }
-
-  .value-title {
-    font-size: 1.3rem;
-  }
-
-  .value-text {
-    font-size: 0.9rem;
-  }
-}
-
-/* Mobile Portrait - 600px and below */
-@media (max-width: 600px) {
-  .page-hero {
-    height: 35vh;
     min-height: 280px;
+    margin-top: 70px;
+  }
+
+  .page-hero .container {
+    padding: 0 20px;
   }
 
   .page-title {
-    font-size: 1.75rem;
-  }
-
-  .our-story {
-    padding: 70px 0;
-  }
-
-  .story-tag,
-  .values-tag {
-    font-size: 0.8rem;
-    letter-spacing: 1.5px;
-  }
-
-  .story-title,
-  .values-title {
-    font-size: 1.75rem;
-    margin-bottom: 25px;
-  }
-
-  .story-text {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 18px;
-  }
-
-  .mission-vision {
-    padding: 60px 0;
-  }
-
-  .mv-card {
-    padding: 35px 25px;
-  }
-
-  .mv-icon {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 20px;
-  }
-
-  .mv-icon svg {
-    width: 32px;
-    height: 32px;
-  }
-
-  .mv-title {
-    font-size: 1.4rem;
-    margin-bottom: 18px;
-  }
-
-  .mv-text {
-    font-size: 0.95rem;
-    line-height: 1.7;
-  }
-
-  .our-values {
-    padding: 70px 0;
-  }
-
-  .values-header {
-    margin-bottom: 40px;
-  }
-
-  .values-grid {
-    gap: 20px;
-  }
-
-  .value-card {
-    padding: 30px 22px;
-  }
-
-  .value-number {
-    font-size: 2.2rem;
-    margin-bottom: 18px;
-  }
-
-  .value-title {
-    font-size: 1.2rem;
-    margin-bottom: 12px;
-  }
-
-  .value-text {
-    font-size: 0.88rem;
-    line-height: 1.65;
-  }
-}
-
-/* Small Mobile - 480px and below */
-@media (max-width: 480px) {
-  .page-hero {
-    height: 32vh;
-    min-height: 250px;
-  }
-
-  .page-title {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     margin-bottom: 10px;
   }
 
@@ -587,18 +413,136 @@
   }
 
   .our-story {
+    padding: 70px 0;
+  }
+
+  .our-story .container {
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .story-content {
+    text-align: left;
+    padding: 0;
+  }
+
+  .story-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .story-image img {
+    max-height: 250px;
+    object-fit: contain;
+  }
+
+  .story-title,
+  .values-title {
+    font-size: 1.9rem;
+  }
+
+  .story-text {
+    font-size: 0.95rem;
+  }
+
+  .mission-vision {
     padding: 60px 0;
+  }
+
+  .mission-vision .container {
+    padding: 0 20px;
+  }
+
+  .mv-card {
+    padding: 35px 25px;
+  }
+
+  .mv-icon {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 20px;
+  }
+
+  .mv-icon svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .mv-title {
+    font-size: 1.5rem;
+  }
+
+  .mv-text {
+    font-size: 0.95rem;
+  }
+
+  .our-values {
+    padding: 70px 0;
+  }
+
+  .our-values .container {
+    padding: 0 20px;
+  }
+
+  .values-header {
+    margin-bottom: 40px;
+  }
+
+  .value-card {
+    grid-column: span 12;
+    padding: 30px 22px;
+  }
+
+  .value-number {
+    font-size: 2.3rem;
+  }
+
+  .value-title {
+    font-size: 1.25rem;
+  }
+
+  .value-text {
+    font-size: 0.88rem;
+  }
+}
+
+/* Mobile Portrait - 600px and below */
+@media (max-width: 600px) {
+  .page-hero {
+    height: 35vh;
+    min-height: 250px;
+  }
+
+  .page-hero .container {
+    padding: 0 15px;
+  }
+
+  .page-title {
+    font-size: 1.65rem;
+  }
+
+  .page-breadcrumb {
+    font-size: 0.8rem;
+  }
+
+  .our-story {
+    padding: 60px 0;
+  }
+
+  .our-story .container {
+    gap: 25px;
+    padding: 0 15px;
   }
 
   .story-tag,
   .values-tag {
     font-size: 0.75rem;
-    letter-spacing: 1px;
+    letter-spacing: 1.3px;
   }
 
   .story-title,
   .values-title {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     margin-bottom: 20px;
   }
 
@@ -608,8 +552,16 @@
     margin-bottom: 16px;
   }
 
+  .story-image img {
+    max-height: 200px;
+  }
+
   .mission-vision {
     padding: 50px 0;
+  }
+
+  .mission-vision .container {
+    padding: 0 15px;
   }
 
   .mv-card {
@@ -627,58 +579,95 @@
   }
 
   .mv-title {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     margin-bottom: 15px;
   }
 
   .mv-text {
     font-size: 0.9rem;
+    line-height: 1.65;
   }
 
   .our-values {
     padding: 60px 0;
   }
 
+  .our-values .container {
+    padding: 0 15px;
+  }
+
+  .values-header {
+    margin-bottom: 35px;
+  }
+
+  .values-grid {
+    gap: 18px;
+  }
+
   .value-card {
-    padding: 28px 20px;
+    padding: 25px 18px;
   }
 
   .value-number {
     font-size: 2rem;
+    margin-bottom: 15px;
   }
 
   .value-title {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    margin-bottom: 10px;
   }
 
   .value-text {
     font-size: 0.85rem;
+    line-height: 1.6;
   }
 }
 
-/* Extra Small Mobile - 375px and below */
-@media (max-width: 375px) {
+/* Small Mobile - 480px and below */
+@media (max-width: 480px) {
   .page-hero {
-    height: 30vh;
+    height: 32vh;
     min-height: 230px;
   }
 
   .page-title {
-    font-size: 1.4rem;
+    font-size: 1.45rem;
+    margin-bottom: 8px;
+  }
+
+  .page-breadcrumb {
+    font-size: 0.75rem;
   }
 
   .our-story {
     padding: 50px 0;
   }
 
+  .our-story .container {
+    padding: 0 15px;
+  }
+
+  .story-tag,
+  .values-tag {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+
   .story-title,
   .values-title {
-    font-size: 1.35rem;
+    font-size: 1.45rem;
+    margin-bottom: 18px;
   }
 
   .story-text {
     font-size: 0.85rem;
     line-height: 1.6;
+    margin-bottom: 14px;
+  }
+
+  .story-image img {
+    max-height: 180px;
   }
 
   .mission-vision {
@@ -694,8 +683,14 @@
     height: 60px;
   }
 
+  .mv-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
   .mv-title {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
   }
 
   .mv-text {
@@ -706,26 +701,97 @@
     padding: 50px 0;
   }
 
-  .values-header {
-    margin-bottom: 35px;
-  }
-
   .value-card {
-    padding: 25px 18px;
+    padding: 22px 16px;
   }
 
   .value-number {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 1.85rem;
   }
 
   .value-title {
     font-size: 1.05rem;
-    margin-bottom: 10px;
   }
 
   .value-text {
     font-size: 0.82rem;
-    line-height: 1.6;
+  }
+}
+
+/* Extra Small Mobile - 375px and below */
+@media (max-width: 375px) {
+  .page-hero {
+    height: 30vh;
+    min-height: 210px;
+  }
+
+  .page-title {
+    font-size: 1.3rem;
+  }
+
+  .our-story {
+    padding: 45px 0;
+  }
+
+  .story-title,
+  .values-title {
+    font-size: 1.3rem;
+  }
+
+  .story-text {
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
+
+  .story-image img {
+    max-height: 160px;
+  }
+
+  .mission-vision {
+    padding: 40px 0;
+  }
+
+  .mv-card {
+    padding: 20px 14px;
+  }
+
+  .mv-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .mv-title {
+    font-size: 1.15rem;
+  }
+
+  .mv-text {
+    font-size: 0.82rem;
+  }
+
+  .our-values {
+    padding: 45px 0;
+  }
+
+  .values-header {
+    margin-bottom: 30px;
+  }
+
+  .value-card {
+    padding: 20px 15px;
+  }
+
+  .value-number {
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+  }
+
+  .value-title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .value-text {
+    font-size: 0.8rem;
+    line-height: 1.55;
   }
 }
