@@ -939,10 +939,11 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
     line-height: 1.7;
   }
 
-  .read-more-btn {
-    padding: 12px 26px;
-    font-size: 0.95rem;
-  }
+ .read-more-btn {
+  margin: 25px auto 0;
+  display: inline-flex;
+  justify-content: center;
+}
 
   /* Decorative element smaller */
   .about-section::before {
@@ -975,11 +976,11 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
     margin-bottom: 15px;
   }
 
-  .read-more-btn {
-    padding: 11px 24px;
-    font-size: 0.9rem;
-    gap: 8px;
-  }
+ .read-more-btn {
+  margin: 25px auto 0;
+  display: inline-flex;
+  justify-content: center;
+}
 
   .read-more-btn svg {
     width: 18px;
@@ -1016,10 +1017,11 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
     margin-bottom: 14px;
   }
 
-  .read-more-btn {
-    padding: 10px 22px;
-    font-size: 0.85rem;
-  }
+   .read-more-btn {
+  margin: 25px auto 0;
+  display: inline-flex;
+  justify-content: center;
+}
 
   .about-section::before {
     width: 200px;
@@ -1055,11 +1057,11 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
     margin-bottom: 12px;
   }
 
-  .read-more-btn {
-    padding: 9px 20px;
-    font-size: 0.8rem;
-    gap: 6px;
-  }
+   .read-more-btn {
+  margin: 25px auto 0;
+  display: inline-flex;
+  justify-content: center;
+}
 
   .read-more-btn svg {
     width: 16px;
