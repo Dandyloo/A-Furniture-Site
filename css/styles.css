@@ -894,6 +894,9 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   /* HIDE THE IMAGES SECTION COMPLETELY */
@@ -907,12 +910,6 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
 
   .about-description {
     font-size: 1.05rem;
-  }
-
-  .read-more-btn {
-    margin: 25px auto 0;
-    display: inline-flex;
-    justify-content: center;
   }
 
   /* Adjust decorative element */
@@ -937,12 +934,6 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
   .about-description {
     font-size: 1rem;
     line-height: 1.7;
-  }
-
-  .read-more-btn {
-    margin: 25px auto 0;
-    display: inline-flex;
-    justify-content: center;
   }
 
   /* Decorative element smaller */
@@ -974,12 +965,6 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
   .about-description {
     font-size: 0.95rem;
     margin-bottom: 15px;
-  }
-
-  .about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .read-more-btn {
