@@ -910,8 +910,10 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
   }
 
   .read-more-btn {
-    margin: 25px auto 0;
-  }
+  margin: 25px auto 0;
+  display: inline-flex;
+  justify-content: center;
+}
 
   /* Adjust decorative element */
   .about-section::before {
