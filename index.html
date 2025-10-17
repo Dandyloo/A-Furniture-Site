@@ -1,198 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kings Furniture | Home</title>
-  
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="./css/grid-guide.css">
-  
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Kings Furniture - Transform your space with timeless furniture designs">
-  <meta name="keywords" content="furniture, home decor, living room, bedroom">
-  
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Kings Furniture | Home">
-  <meta property="og:description" content="Discover elegant designs that bring comfort and style">
-  <meta property="og:image" content="./images/kings-group.webp">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kingsfurnituregh.com">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-  
-  <!-- Preload hero image -->
-  <link rel="preload" as="image" href="./images/products/living-room/living-set-2a.webp">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kings Furniture | Home</title>
 
-  <!-- Grid Guide Overlay (Dev Tool) -->
-  <div class="grid-container">
-    <div class="grid">
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Roboto:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/grid-guide.css" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Kings Furniture - Transform your space with timeless furniture designs"
+    />
+    <meta
+      name="keywords"
+      content="furniture, home decor, living room, bedroom"
+    />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Kings Furniture | Home" />
+    <meta
+      property="og:description"
+      content="Discover elegant designs that bring comfort and style"
+    />
+    <meta property="og:image" content="./images/KINGS NEW LOGO 3.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kingsfurnituregh.com" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+
+    <!-- Preload hero image -->
+    <link
+      rel="preload"
+      as="image"
+      href="./images/products/living-room/living-set-2a.webp"
+    />
+  </head>
+  <body>
+    <!-- Grid Guide Overlay (Dev Tool) -->
+    <div class="grid-container">
+      <div class="grid">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
     </div>
-  </div>
 
-  <!-- Navigation Header -->
-  <header class="site-header">
-    <div class="container">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="index.html">
-          <img src="./images/kings-group.webp" alt="Kings Furniture Logo">
-        </a>
+    <!-- Navigation Header -->
+    <header class="site-header">
+      <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="./images/KINGS NEW LOGO 3.png"
+              alt="Kings Furniture Logo"
+            />
+          </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="nav-links" id="main-navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="#">Products</a>
+          <a href="#">News</a>
+        </nav>
+
+        <!-- Contact Button -->
+        <div class="contact-btn">
+          <button>Contact</button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+          class="mobile-menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
+    </header>
 
-      <!-- Navigation Links -->
-      <nav class="nav-links" id="main-navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="#">Products</a>
-        <a href="#">News</a>
-      </nav>
-
-      <!-- Contact Button -->
-      <div class="contact-btn">
-        <button>Contact</button>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Transform Your Space with Timeless Furniture</h1>
+        <p>
+          We design and build furniture that transforms spaces — creating
+          comfort for homes, productivity for offices, inspiration for schools,
+          and elegance for auditoriums.
+        </p>
+        <button class="hero-btn">Explore Collection</button>
       </div>
-
-      <!-- Mobile Menu Toggle -->
-      <button class="mobile-menu-toggle" 
-              aria-label="Toggle menu" 
-              aria-expanded="false"
-              aria-controls="main-navigation">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button
+        class="scroll-down"
+        onclick="scrollToNextSection()"
+        aria-label="Scroll to products section"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="none"
+          stroke="#FFFF66"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+        </svg>
       </button>
-    </div>
-  </header>
+    </section>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Transform Your Space with Timeless Furniture</h1>
-      <p>We design and build furniture that transforms spaces — creating comfort for homes, productivity for offices, inspiration for schools, and elegance for auditoriums.</p>
-      <button class="hero-btn">Explore Collection</button>
-    </div>
-    <button class="scroll-down" onclick="scrollToNextSection()" aria-label="Scroll to products section">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#FFFF66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-        <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
-      </svg>
-    </button>
-  </section>
-
-  <!-- Featured Products Section -->
-  <section class="featured-products next-section">
-    <div class="container">
-      <div class="products-header">
-        <h2 class="section-title scroll-animate">Explore Our Featured Collection</h2>
-        <p class="section-subtitle scroll-animate">From cozy bedrooms to inspiring offices, elegant dining spaces, and modern living areas — each piece in our collection blends comfort, functionality, and timeless design to enhance every corner of your space.</p>
-      </div>
-
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="./images/products/living-room/living-set-10a.webp" 
-               alt="Modern grey living room furniture set with sofa and coffee table" 
-               loading="lazy">
-          <div class="product-label">Living Room</div>
+    <!-- Featured Products Section -->
+    <section class="featured-products next-section">
+      <div class="container">
+        <div class="products-header">
+          <h2 class="section-title scroll-animate">
+            Explore Our Featured Collection
+          </h2>
+          <p class="section-subtitle scroll-animate">
+            From cozy bedrooms to inspiring offices, elegant dining spaces, and
+            modern living areas — each piece in our collection blends comfort,
+            functionality, and timeless design to enhance every corner of your
+            space.
+          </p>
         </div>
 
-        <div class="product-card">
-          <img src="./images/products/bedroom/bedroom-9b.webp" 
-               alt="Elegant bedroom furniture with bed frame and nightstands" 
-               loading="lazy">
-          <div class="product-label">Bedroom</div>
-        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <img
+              src="./images/products/living-room/living-set-10a.webp"
+              alt="Modern grey living room furniture set with sofa and coffee table"
+              loading="lazy"
+            />
+            <div class="product-label">Living Room</div>
+          </div>
 
-        <div class="product-card">
-          <img src="./images/products/kitchen/kitchen-set-16c.jpg" 
-               alt="Contemporary kitchen furniture and cabinetry" 
-               loading="lazy">
-          <div class="product-label">Kitchen</div>
-        </div>
+          <div class="product-card">
+            <img
+              src="./images/products/bedroom/bedroom-9b.webp"
+              alt="Elegant bedroom furniture with bed frame and nightstands"
+              loading="lazy"
+            />
+            <div class="product-label">Bedroom</div>
+          </div>
 
-        <div class="product-card">
-          <img src="./images/products/dining/dining-1a.webp" 
-               alt="Stylish dining table and chairs set" 
-               loading="lazy">
-          <div class="product-label">Dining</div>
-        </div>
+          <div class="product-card">
+            <img
+              src="./images/products/kitchen/kitchen-set-16c.jpg"
+              alt="Contemporary kitchen furniture and cabinetry"
+              loading="lazy"
+            />
+            <div class="product-label">Kitchen</div>
+          </div>
 
-        <div class="product-card">
-          <img src="./images/products/office/office-set-2b.webp" 
-               alt="Professional office desk and chair furniture" 
-               loading="lazy">
-          <div class="product-label">Office</div>
-        </div>
-      </div>
-    </div>
-  </section>
+          <div class="product-card">
+            <img
+              src="./images/products/dining/dining-1a.webp"
+              alt="Stylish dining table and chairs set"
+              loading="lazy"
+            />
+            <div class="product-label">Dining</div>
+          </div>
 
-  <!-- About Section -->
-  <section class="about-section">
-    <div class="container">
-      <!-- Left Side - Company Summary -->
-      <div class="about-content">
-        <span class="about-tag scroll-animate">About Us</span>
-        <h2 class="about-title scroll-animate">Crafting Spaces That Inspire</h2>
-        <p class="about-description scroll-animate">
-          At Kings Furniture, we believe that furniture is more than just pieces in a room — it's the foundation of comfort, productivity, and style. For over two decades, we've been dedicated to designing and crafting quality furniture that transforms homes, offices, schools, and auditoriums across Ghana.
-        </p>
-        <p class="about-description scroll-animate">
-          Our commitment to excellence means every piece we create combines durability, functionality, and timeless design. From custom orders to ready-made collections, we bring your vision to life with precision and passion.
-        </p>
-        <a href="about.html" class="read-more-btn scroll-animate">
-          Read More
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
-      </div>
-
-      <!-- Right Side - Diagonal Image Layout -->
-      <div class="about-images">
-        <div class="about-image-1 scroll-animate">
-          <img src="https://t3.ftcdn.net/jpg/00/14/82/18/240_F_14821833_GovIKgFi4F7E9hO369DuSoS1S30k1Hf7.jpg" 
-               alt="Kings Furniture workshop crafting quality furniture" 
-               loading="lazy">
-        </div>
-        <div class="about-image-2 scroll-animate">
-          <img src="./images/kings-group.webp" 
-               alt="Kings Furniture's Logo" 
-               loading="lazy">
-        </div>
-        <div class="about-image-3 scroll-animate">
-          <img src="https://t3.ftcdn.net/jpg/13/00/31/18/240_F_1300311803_Ren45IHPnxBFfeVjNZeHDO1KeLFMxdtp.jpg" 
-               alt="Elegant bedroom furniture setup" 
-               loading="lazy">
+          <div class="product-card">
+            <img
+              src="./images/products/office/office-set-2b.webp"
+              alt="Professional office desk and chair furniture"
+              loading="lazy"
+            />
+            <div class="product-label">Office</div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Scroll to Top Button -->
-  <button id="scrollTopBtn" title="Go to top">↑</button>
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="container">
+        <!-- Left Side - Company Summary -->
+        <div class="about-content">
+          <span class="about-tag scroll-animate">About Us</span>
+          <h2 class="about-title scroll-animate">
+            Crafting Spaces That Inspire
+          </h2>
+          <p class="about-description scroll-animate">
+            At Kings Furniture, we believe that furniture is more than just
+            pieces in a room — it's the foundation of comfort, productivity, and
+            style. For over two decades, we've been dedicated to designing and
+            crafting quality furniture that transforms homes, offices, schools,
+            and auditoriums across Ghana.
+          </p>
+          <p class="about-description scroll-animate">
+            Our commitment to excellence means every piece we create combines
+            durability, functionality, and timeless design. From custom orders
+            to ready-made collections, we bring your vision to life with
+            precision and passion.
+          </p>
+          <a href="about.html" class="read-more-btn scroll-animate">
+            Read More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
 
-  <!-- JavaScript -->
-  <script src="./javascript/script.js"></script>
-</body>
+        <!-- Right Side - Diagonal Image Layout -->
+        <div class="about-images">
+          <div class="about-image-1 scroll-animate">
+            <img
+              src="https://t3.ftcdn.net/jpg/00/14/82/18/240_F_14821833_GovIKgFi4F7E9hO369DuSoS1S30k1Hf7.jpg"
+              alt="Kings Furniture workshop crafting quality furniture"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-image-2 scroll-animate">
+            <img
+              src="./images/KINGS NEW LOGO 3.png"
+              alt="Kings Furniture's Logo"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-image-3 scroll-animate">
+            <img
+              src="https://t3.ftcdn.net/jpg/13/00/31/18/240_F_1300311803_Ren45IHPnxBFfeVjNZeHDO1KeLFMxdtp.jpg"
+              alt="Elegant bedroom furniture setup"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+
+    <!-- JavaScript -->
+    <script src="./javascript/script.js"></script>
+  </body>
 </html>
