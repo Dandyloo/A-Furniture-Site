@@ -674,8 +674,18 @@ html, body {
     padding: 45px 0;
   }
 
+  .mission-vision .container {
+    grid-template-columns: 1fr;
+  }
+
   .mv-card {
+    grid-column: span 1;
     padding: 25px 18px;
+    margin-bottom: 20px;
+  }
+
+  .mv-card:last-child {
+    margin-bottom: 0;
   }
 
   .mv-icon {
@@ -751,8 +761,19 @@ html, body {
     padding: 40px 0;
   }
 
+  .mission-vision .container {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+
   .mv-card {
+    grid-column: span 1;
     padding: 20px 14px;
+    margin-bottom: 15px;
+  }
+
+  .mv-card:last-child {
+    margin-bottom: 0;
   }
 
   .mv-icon {
