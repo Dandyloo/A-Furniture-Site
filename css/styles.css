@@ -910,10 +910,10 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
   }
 
   .read-more-btn {
-  margin: 25px auto 0;
-  display: inline-flex;
-  justify-content: center;
-}
+    margin: 25px auto 0;
+    display: inline-flex;
+    justify-content: center;
+  }
 
   /* Adjust decorative element */
   .about-section::before {
@@ -939,11 +939,11 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
     line-height: 1.7;
   }
 
- .read-more-btn {
-  margin: 25px auto 0;
-  display: inline-flex;
-  justify-content: center;
-}
+  .read-more-btn {
+    margin: 25px auto 0;
+    display: inline-flex;
+    justify-content: center;
+  }
 
   /* Decorative element smaller */
   .about-section::before {
@@ -976,11 +976,16 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
     margin-bottom: 15px;
   }
 
- .read-more-btn {
-  margin: 25px auto 0;
-  display: inline-flex;
-  justify-content: center;
-}
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .read-more-btn {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
 
   .read-more-btn svg {
     width: 18px;
@@ -1017,11 +1022,10 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
     margin-bottom: 14px;
   }
 
-   .read-more-btn {
-  margin: 25px auto 0;
-  display: inline-flex;
-  justify-content: center;
-}
+  .read-more-btn {
+    padding: 11px 22px;
+    font-size: 0.9rem;
+  }
 
   .about-section::before {
     width: 200px;
@@ -1057,11 +1061,10 @@ background: linear-gradient(to bottom, #04398e, #373B44); /* W3C, IE 10+/ Edge, 
     margin-bottom: 12px;
   }
 
-   .read-more-btn {
-  margin: 25px auto 0;
-  display: inline-flex;
-  justify-content: center;
-}
+  .read-more-btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
 
   .read-more-btn svg {
     width: 16px;
