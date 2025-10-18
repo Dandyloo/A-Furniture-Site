@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | Kings Furniture</title>
+    <title>Our Products | Kings Furniture</title>
 
     <!-- Fonts -->
     <link
@@ -13,24 +13,24 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/products.css" />
     <link rel="stylesheet" href="../css/grid-guide.css" />
 
     <!-- SEO Meta Tags -->
     <meta
       name="description"
-      content="Learn about Kings Furniture - Over 20 years of crafting quality furniture in Ghana"
+      content="Browse our complete collection of quality furniture - Living room, bedroom, dining, office, and kitchen furniture in Ghana"
     />
     <meta
       name="keywords"
-      content="about kings furniture, furniture company ghana, furniture history"
+      content="furniture ghana, living room furniture, bedroom sets, office furniture, dining tables, kitchen furniture"
     />
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="About Us | Kings Furniture" />
+    <meta property="og:title" content="Our Products | Kings Furniture" />
     <meta
       property="og:description"
-      content="Discover our story and commitment to quality furniture"
+      content="Explore our complete furniture collection"
     />
     <meta property="og:image" content="../images/KINGS NEW LOGO 3.png" />
     <meta property="og:type" content="website" />
@@ -73,17 +73,17 @@
         <!-- Navigation Links -->
         <nav class="nav-links" id="main-navigation">
           <a href="../index.html">Home</a>
-          <a href="../pages/about.html" class="active">About</a>
-          <a href="../pages/products.html">Products</a>
+          <a href="../pages/about.html">About</a>
+          <a href="../pages/products.html" class="active">Products</a>
           <a href="#">News</a>
         </nav>
 
         <!-- Contact Button -->
-            <div class="contact-btn">
-  <a href="../pages/contact.html">
-    <button type="button">Contact</button>
-  </a>
-</div>
+        <div class="contact-btn">
+          <a href="../pages/contact.html">
+            <button type="button">Contact</button>
+          </a>
+        </div>
 
         <!-- Mobile Menu Toggle -->
         <button
@@ -105,180 +105,171 @@
       <div class="hero-overlay"></div>
       <div class="container">
         <div class="page-hero-content">
-          <h1 class="page-title">About Kings Furniture</h1>
+          <h1 class="page-title">Our Products</h1>
           <p class="page-breadcrumb">
-            <a href="../index.html">Home</a> / About Us
+            <a href="../index.html">Home</a> / Products
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Our Story Section -->
-    <section class="our-story">
+    <!-- Products Section -->
+    <section class="products-section">
       <div class="container">
-        <div class="story-content">
-          <span class="story-tag scroll-animate">Our Story</span>
-          <h2 class="story-title scroll-animate">
-            Over Two Decades of Excellence
-          </h2>
-          <p class="story-text scroll-animate">
-            Kings Group Ghana Limited's story began in 1992 in a small workshop
-            in Chapel Hill, Takoradi, nestled in Ghana's Western Region. Under
-            the name Kings Furniture Works, we embarked on a mission to create
-            household furnishings that honored traditional Ghanaian
-            craftsmanship while embracing modern design and lasting quality.
-          </p>
-          <p class="story-text scroll-animate">
-            From those early days, our commitment to excellence set us apart.
-            Each piece we crafted reflected our dedication to detail,
-            durability, and beauty. As word of our quality spread, demand grew –
-            and so did our ambitions.
-          </p>
-          <p class="story-text scroll-animate">
-            Three decades of innovation and customer satisfaction have
-            transformed that single workshop into Kings Group Ghana Limited,
-            with Kings Furniture Company Limited at its heart. We've expanded
-            into imports and aluminium fabrication, serving homes, offices,
-            schools, and institutions across Ghana.
-          </p>
-          <p class="story-text scroll-animate">
-            Our journey from a Takoradi workshop to a diversified enterprise
-            embodies resilience, innovation, and an uncompromising commitment to
-            quality. These aren't just values we speak about – they're woven
-            into every product we create and every relationship we build.
-          </p>
-        </div>
-
-        <div class="story-image scroll-animate">
-          <img
-            src="../images/KINGS NEW LOGO 3.png"
-            alt="Kings Furniture craftsmanship"
-            loading="lazy"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Mission & Vision Section -->
-    <section class="mission-vision">
-      <div class="container">
-        <div class="mv-card scroll-animate">
-          <div class="mv-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
+        <!-- Filter Bar -->
+        <div class="filter-bar scroll-animate">
+          <div class="filter-left">
+            <h2 class="filter-title">Browse Our Collection</h2>
+            <p class="products-count" id="productsCount">
+              Showing <span id="currentCount">0</span> products
+            </p>
           </div>
-          <h3 class="mv-title">Our Mission</h3>
-          <p class="mv-text">
-            To design and deliver exceptional furniture that combines quality,
-            functionality, and timeless elegance — enhancing the comfort and
-            beauty of every space we serve across Ghana.
-          </p>
+
+          <div class="filter-right">
+            <!-- Category Filter -->
+            <div class="filter-group">
+              <label for="categoryFilter">Category:</label>
+              <select id="categoryFilter" class="filter-select">
+                <option value="all">All Categories</option>
+                <option value="living-room">Living Room</option>
+                <option value="bedroom">Bedroom</option>
+                <option value="dining">Dining</option>
+                <option value="office">Office</option>
+                <option value="kitchen">Kitchen</option>
+              </select>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+                aria-label="Search products"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </div>
+          </div>
         </div>
 
-        <div class="mv-card scroll-animate">
-          <div class="mv-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-              <circle cx="12" cy="12" r="3"></circle>
-            </svg>
-          </div>
-          <h3 class="mv-title">Our Vision</h3>
-          <p class="mv-text">
-            To become West Africa's leading furniture brand, recognized for
-            innovation, craftsmanship, and transforming spaces into inspiring
-            environments where people live, work, and thrive.
-          </p>
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Products will be dynamically inserted here -->
+        </div>
+
+        <!-- No Results Message -->
+        <div class="no-results" id="noResults" style="display: none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <h3>No products found</h3>
+          <p>Try adjusting your filters or search terms</p>
         </div>
       </div>
     </section>
 
-    <!-- Our Values Section -->
-    <section class="our-values">
-      <div class="container">
-        <div class="values-header">
-          <span class="values-tag scroll-animate">Our Values</span>
-          <h2 class="values-title scroll-animate">What Drives Us Every Day</h2>
-        </div>
+    <!-- Product Modal -->
+    <div class="product-modal" id="productModal">
+      <div class="modal-overlay" id="modalOverlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose" aria-label="Close modal">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
 
-        <div class="values-grid">
-          <div class="value-card scroll-animate">
-            <div class="value-number">01</div>
-            <h3 class="value-title">Quality First</h3>
-            <p class="value-text">
-              We never compromise on quality. From material selection to final
-              delivery, excellence is our standard.
-            </p>
+        <div class="modal-body">
+          <!-- Image Gallery Section -->
+          <div class="modal-gallery">
+            <div class="main-image">
+              <img id="modalMainImage" src="" alt="" />
+            </div>
+            <div class="thumbnail-strip" id="thumbnailStrip">
+              <!-- Thumbnails will be inserted here -->
+            </div>
           </div>
 
-          <div class="value-card scroll-animate">
-            <div class="value-number">02</div>
-            <h3 class="value-title">Customer Focus</h3>
-            <p class="value-text">
-              Your satisfaction drives everything we do. We listen, understand,
-              and deliver beyond expectations.
-            </p>
-          </div>
+          <!-- Product Info Section -->
+          <div class="modal-info">
+            <div class="modal-category" id="modalCategory"></div>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-description" id="modalDescription"></p>
 
-          <div class="value-card scroll-animate">
-            <div class="value-number">03</div>
-            <h3 class="value-title">Innovation</h3>
-            <p class="value-text">
-              We embrace new designs, techniques, and trends while respecting
-              timeless craftsmanship principles.
-            </p>
-          </div>
-
-          <div class="value-card scroll-animate">
-            <div class="value-number">04</div>
-            <h3 class="value-title">Integrity</h3>
-            <p class="value-text">
-              Honesty and transparency guide our relationships with customers,
-              partners, and team members.
-            </p>
-          </div>
-
-          <div class="value-card scroll-animate">
-            <div class="value-number">05</div>
-            <h3 class="value-title">Sustainability</h3>
-            <p class="value-text">
-              We source responsibly and build furniture designed to last,
-              reducing waste and environmental impact.
-            </p>
-          </div>
-
-          <div class="value-card scroll-animate">
-            <div class="value-number">06</div>
-            <h3 class="value-title">Community</h3>
-            <p class="value-text">
-              Supporting local craftsmanship and contributing to Ghana's growth
-              is at the heart of our business.
-            </p>
+            <div class="modal-actions">
+              <a href="../pages/contact.html" class="modal-btn modal-btn-primary">
+                Request Quote
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+              </a>
+              <button class="modal-btn modal-btn-secondary" id="modalWhatsapp">
+                WhatsApp
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- CTA Section -->
     <section class="cta-section">
@@ -286,15 +277,15 @@
       <div class="container">
         <div class="cta-content">
           <h2 class="cta-title scroll-animate">
-            Ready to Transform Your Space?
+            Didn't Find What You're Looking For?
           </h2>
           <p class="cta-subtitle scroll-animate">
-            Let's bring your vision to life with furniture that combines style,
-            comfort, and durability.
+            We specialize in custom furniture design. Share your vision with us
+            and we'll create exactly what you need.
           </p>
           <div class="cta-buttons scroll-animate">
-            <button class="cta-btn cta-primary" type="button" onclick="window.location.href='../pages/products.html'">
-              Browse Products
+            <button class="cta-btn cta-primary" type="button" onclick="window.location.href='../pages/contact.html'">
+              Request Custom Design
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -308,24 +299,6 @@
               >
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </button>
-            <button class="cta-btn cta-secondary" type="button" onclick="window.location.href='../pages/contact.html'">
-              Get a Quote
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-                ></path>
               </svg>
             </button>
           </div>
@@ -430,7 +403,7 @@
             <ul>
               <li><a href="../index.html">Home</a></li>
               <li><a href="../pages/about.html">About Us</a></li>
-              <li><a href="#">Products</a></li>
+              <li><a href="../pages/products.html">Products</a></li>
               <li><a href="#">News</a></li>
               <li><a href="../pages/contact.html">Contact</a></li>
             </ul>
@@ -440,11 +413,11 @@
           <div class="footer-column footer-links">
   <h3 class="footer-heading">Products</h3>
   <ul>
-    <li><a href="../pages/products.html?category=living-room">Living Room</a></li>
-    <li><a href="../pages/products.html?category=bedroom">Bedroom</a></li>
-    <li><a href="../pages/products.html?category=dining">Dining</a></li>
-    <li><a href="../pages/products.html?category=office">Office</a></li>
-    <li><a href="../pages/products.html?category=kitchen">Kitchen</a></li>
+    <li><a href="?category=living-room">Living Room</a></li>
+    <li><a href="?category=bedroom">Bedroom</a></li>
+    <li><a href="?category=dining">Dining</a></li>
+    <li><a href="?category=office">Office</a></li>
+    <li><a href="?category=kitchen">Kitchen</a></li>
   </ul>
 </div>
 
@@ -527,9 +500,10 @@
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button id="scrollTopBtn" title="Go to top">↑</button>
+    <button id="scrollTopBtn" title="Go to top" type="button">↑</button>
 
     <!-- JavaScript -->
     <script src="../javascript/script.js"></script>
+    <script src="../javascript/products.js"></script>
   </body>
 </html>
