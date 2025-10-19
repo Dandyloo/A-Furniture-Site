@@ -78,69 +78,460 @@ const productsDatabase = [
   // LIVING ROOM PRODUCTS
   {
     id: 1,
-    name: "Modern Living Set",
+    name: "LR-001",
     category: "living-room",
     images: [
-      "../images/products/living-room/living-set-2a.webp",
-      "../images/products/living-room/living-set-2b.webp",
-      "../images/products/living-room/living-set-2c.webp",
-      "../images/products/living-room/living-set-2d.webp"
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869686/living-set-10a_mo70iy.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869688/living-set-10b_emsur9.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869691/living-set-10c_xhqfhn.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869694/living-set-10d_eyvmfc.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869779/living-set-10e_crwhoe.webp"
     ],
-    description: "Elegant modern living room set featuring comfortable seating and contemporary design. Perfect for creating a welcoming space for family and guests."
+    description: "We'll place a description here"
   },
   {
     id: 2,
-    name: "Premium Grey Sofa Set",
+    name: "LR-002",
     category: "living-room",
     images: [
-      "../images/products/living-room/living-set-10a.webp"
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869794/living-set-11_gokh81.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869819/living-set-12_nvjbdg.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869822/living-set-13_u57pk4.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869825/living-set-14_ofyj9n.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869827/living-set-15_lopddu.webp"
     ],
-    description: "Luxurious grey upholstered sofa set with matching coffee table. Designed for ultimate comfort and style in your living space."
+    description: "We'll place a description here"
   },
-  
-  // BEDROOM PRODUCTS
   {
     id: 3,
-    name: "Classic Bedroom Set",
-    category: "bedroom",
+    name: "LR-003",
+    category: "living-room",
     images: [
-      "../images/products/bedroom/bedroom-9b.webp"
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869831/living-set-16a_luw3am.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869933/living-set-16b_v6mbvl.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870004/living-set-16c_u68ry4.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870125/living-set-16d_c5n34o.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870128/living-set-16e_asuti3.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870133/living-set-16f_ekcluu.webp"
     ],
-    description: "Complete bedroom furniture set including bed frame, nightstands, and elegant finish. Creates a peaceful retreat for rest and relaxation."
+    description: "We'll place a description here"
   },
-  
-  // KITCHEN PRODUCTS
   {
     id: 4,
-    name: "Contemporary Kitchen Set",
-    category: "kitchen",
+    name: "LR-004",
+    category: "living-room",
     images: [
-      "../images/products/kitchen/kitchen-set-16c.jpg"
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870209/living-set-1a_ozaxju.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870212/living-set-1b_nzy3bz.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870215/living-set-1c_pzxhuq.webp"
     ],
-    description: "Modern kitchen cabinetry and furniture designed for functionality and style. Maximizes storage while maintaining a clean aesthetic."
+    description: "We'll place a description here"
   },
-  
-  // DINING PRODUCTS
   {
     id: 5,
-    name: "Elegant Dining Set",
+    name: "LR-005",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870218/living-set-2a_kiqhgr.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870221/living-set-2b_qzg4uw.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870224/living-set-2c_cjygrz.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870226/living-set-2d_mxspz9.webp"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 6,
+    name: "LR-006",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870229/living-set-3a_umclfq.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870232/living-set-3b_jx9ll4.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870235/living-set-3c_swnufn.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870238/living-set-3d_ko9i4i.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870239/living-set-3e_exl9e3.webp"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 7,
+    name: "LR-007",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870242/living-set-4a_kquzkl.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870244/living-set-4b_owba0e.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870247/living-set-4c_muwg5s.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870250/living-set-4d_qhtmzx.webp"
+    ],
+    description: "We'll place a description here"
+  },  
+  {
+    id: 8,
+    name: "LR-008",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870252/living-set-5a_jwgeqp.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870255/living-set-5b_dk1mlx.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870257/living-set-5c_z5vris.webp"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 9,
+    name: "LR-009",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870260/living-set-6a_tentud.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870262/living-set-6b_yuf9eg.webp"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 10,
+    name: "LR-010",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870265/living-set-7a_mhswjk.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870268/living-set-7b_kqtmup.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870271/living-set-7c_qcri1f.webp"
+    ],
+    description: "We'll place a description here"
+  },    
+  {
+    id: 11,
+    name: "LR-011",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870273/living-set-8a_wjfxgr.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870275/living-set-8b_yj4bv4.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870278/living-set-8c_g8gupq.webp"
+    ],
+    description: "We'll place a description here"
+  },     
+  {
+    id: 12,
+    name: "LR-012",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870281/living-set-9a_pf4dtd.webp"
+    ],
+    description: "We'll place a description here"
+  }, 
+
+
+
+
+
+
+  // BEDROOM PRODUCTS
+  {
+    id: 13,
+    name: "BR-001",
+    category: "bedroom",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870349/bedroom-9a_xmwzcr.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870351/bedroom-9b_zdkb6v.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870353/bedroom-9c_hlqxr7.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870355/bedroom-9d_h4upnr.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870358/bedroom-9e_f0rly7.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870361/bedroom-9f_mddga3.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 14,
+    name: "BR-002",
+    category: "bedroom",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870287/bedroom-10a.jpg_lmmrho.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870291/bedroom-10b.jpg_jr4snp.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870297/bedroom-10c.jpg_cqef6u.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 15,
+    name: "BR-003",
+    category: "bedroom",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870300/bedroom-11a_flqxv7.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870305/bedroom-11b_cldumm.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870310/bedroom-11c_yuqjxa.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870315/bedroom-11d_yehltg.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870317/bedroom-11e_ha71g2.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 16,
+    name: "BR-004",
+    category: "bedroom",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870320/bedroom-12_vq6ou0.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870322/bedroom-13_jhrxid.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 17,
+    name: "BR-005",
+    category: "bedroom",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870325/bedroom-2a_krlum9.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870328/bedroom-2b_bic3wt.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870330/bedroom-2c_akyezm.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 18,
+    name: "BR-006",
+    category: "bedroom",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870336/bedroom-4_m5tnix.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870334/bedroom-3a_ekdb5h.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870338/bedroom-5_v9ohj3.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870340/bedroom-6_hf7fro.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870342/bedroom-7_hwnybt.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870345/bedroom-8_g5tnnc.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  // KITCHEN PRODUCTS
+  {
+    id: 19,
+    name: "KS-001",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868320/kitchen-set-10a_yo8dqf.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868322/kitchen-set-10b_hg0j5b.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868326/kitchen-set-10c_dopelp.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868328/kitchen-set-10d_ea2znt.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 20,
+    name: "KS-002",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868329/kitchen-set-11a_vbvcru.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868332/kitchen-set-11b_aknjim.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868334/kitchen-set-11c_mqv5wi.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868337/kitchen-set-11d_pxtef4.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 21,
+    name: "KS-003",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868340/kitchen-set-12a_mqyobe.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868342/kitchen-set-12b_cxsx8y.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868345/kitchen-set-12c_rnrrco.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868347/kitchen-set-12d_ko21o8.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868350/kitchen-set-12e_xmp8u8.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 22,
+    name: "KS-004",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868397/kitchen-set-13a_oisbcd.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868399/kitchen-set-13b_ia2e6z.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 23,
+    name: "KS-005",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868403/kitchen-set-14a_knwhop.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868406/kitchen-set-14b_relzsk.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868409/kitchen-set-14c_hqoace.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868434/kitchen-set-14d_oxqup5.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 24,
+    name: "KS-006",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868437/kitchen-set-15a_rgvjyg.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868439/kitchen-set-15b_sjh3wr.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 25,
+    name: "KS-007",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868443/kitchen-set-16a_cgw91h.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868446/kitchen-set-16b_mbvuvl.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868449/kitchen-set-16c_ijwj2b.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868452/kitchen-set-16d_klefpw.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868482/kitchen-set-16e_bd5l7b.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868645/kitchen-set-16f_qquqxp.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 26,
+    name: "KS-008",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868804/kitchen-set-1a_poezlm.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868811/kitchen-set-1b_a31lri.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868813/kitchen-set-1c_d0h0tx.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 27,
+    name: "KS-009",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868818/kitchen-set-2a_r8onlx.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868821/kitchen-set-2b_auobjx.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868823/kitchen-set-2c_mxdpru.jpg",
+      ""
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 28,
+    name: "KS-010",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868843/kitchen-set-3a_pxgwh2.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868878/kitchen-set-3b_ujv14f.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 29,
+    name: "KS-011",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868896/kitchen-set-4a_oq7eog.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868924/kitchen-set-4b_zfpf3u.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868987/kitchen-set-4c_mvkzmy.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 30,
+    name: "KS-012",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869006/kitchen-set-5a_rlu13b.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869009/kitchen-set-5b_fik8yk.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869012/kitchen-set-5c_vehirv.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869014/kitchen-set-5d_wjnne2.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869017/kitchen-set-5e_lvw9wj.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869019/kitchen-set-5f_jlanve.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 31,
+    name: "KS-013",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869024/kitchen-set-6a_d1d0dg.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869027/kitchen-set-6b_rhdavf.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869030/kitchen-set-6c_wdzkvj.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869033/kitchen-set-6d_amabyw.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 32,
+    name: "KS-014",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869181/kitchen-set-7a_hfhaqk.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869342/kitchen-set-7b_bgkpgt.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 33,
+    name: "KS-015",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869502/kitchen-set-8a_sagbpj.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869564/kitchen-set-8b_yf0mgv.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869567/kitchen-set-8c_idz7ao.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869570/kitchen-set-8d_zjnuv7.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+  {
+    id: 34,
+    name: "KS-016",
+    category: "kitchen",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869603/kitchen-set-9a_f5imot.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869677/kitchen-set-9b_kchaay.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869679/kitchen-set-9c_kkdhxp.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760869683/kitchen-set-9d_hovibx.jpg"
+    ],
+    description: "We'll place a description here"
+  },
+
+  // DINING PRODUCTS
+  {
+    id: 35,
+    name: "DS-001",
     category: "dining",
     images: [
-      "../images/products/dining/dining-1a.webp"
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870363/dining-1a_eqzouv.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870369/dining-1b_c6akhi.jpg"
     ],
     description: "Beautiful dining table with matching chairs. Perfect for family meals and entertaining guests in style."
   },
   
   // OFFICE PRODUCTS
   {
-    id: 6,
-    name: "Executive Office Set",
+    id: 36,
+    name: "OS-001",
     category: "office",
     images: [
-      "../images/products/office/office-set-2b.webp"
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868263/office-set-1a_d5dxe1.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868266/office-set-1b_viel79.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868268/office-set-1c_rly3li.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868270/office-set-1d_is2qu4.jpg"
     ],
     description: "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours."
   },
+  {
+    id: 37,
+    name: "OS-002",
+    category: "office",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868275/office-set-2b_y8sjqv.webp",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868273/office-set-2a_r1g3gq.jpg"
+    ],
+    description: "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours."
+  },
+  {
+    id: 38,
+    name: "OS-003",
+    category: "office",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868278/office-set-3a_efth2r.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868280/office-set-3b_nsqwzj.jpg"
+    ],
+    description: "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours."
+  },
+
+
 
   // ADD MORE PRODUCTS HERE
   // Copy the template below and fill in your product details:
