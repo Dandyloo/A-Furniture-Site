@@ -1,0 +1,519 @@
+/* PROMO SYSTEM STYLES */
+
+/* ============================================
+   PROMO BANNER SLIDER (After Hero Section)
+============================================ */
+.promo-slider-section {
+  width: 100%;
+  margin: 60px 0;
+  overflow: hidden;
+}
+
+.promo-slider-container {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.promo-slider {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.promo-slides {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.promo-slide {
+  min-width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.promo-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16/6;
+  object-fit: cover;
+}
+
+/* Navigation Arrows */
+.promo-slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.promo-slider-nav:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.promo-slider-nav.prev {
+  left: 20px;
+}
+
+.promo-slider-nav.next {
+  right: 20px;
+}
+
+.promo-slider-nav svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--color-primary);
+  stroke-width: 3;
+}
+
+/* Dots Indicator */
+.promo-slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.promo-slider-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.promo-slider-dot.active {
+  background: white;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* ============================================
+   CORNER SLIDE-IN NOTIFICATION (Compact Card)
+============================================ */
+.promo-notification {
+  position: fixed;
+  bottom: 30px;
+  right: -400px;
+  width: 320px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 9999;
+  transition: right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.promo-notification.show {
+  right: 30px;
+}
+
+.promo-notification.dismissed {
+  right: -400px;
+}
+
+.promo-notification-image {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+}
+
+.promo-notification-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.promo-notification:hover .promo-notification-image img {
+  transform: scale(1.05);
+}
+
+.promo-notification-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--color-highlight);
+  color: var(--color-primary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.promo-notification-content {
+  padding: 16px;
+}
+
+.promo-notification-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.promo-notification-text {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.promo-notification-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: gap 0.3s ease;
+}
+
+.promo-notification:hover .promo-notification-cta {
+  gap: 10px;
+}
+
+.promo-notification-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.promo-notification-close:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: rotate(90deg);
+}
+
+.promo-notification-close svg {
+  width: 14px;
+  height: 14px;
+  stroke: white;
+  stroke-width: 3;
+}
+
+/* ============================================
+   POPUP MODAL (Full Image View)
+============================================ */
+.promo-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.promo-popup.active {
+  display: flex;
+}
+
+.promo-popup-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.promo-popup-content {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.4s ease;
+  z-index: 10001;
+}
+
+.promo-popup-image {
+  width: 100%;
+  display: block;
+}
+
+.promo-popup-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.promo-popup-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.promo-popup-close:hover {
+  background: var(--color-primary);
+  transform: rotate(90deg);
+}
+
+.promo-popup-close svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--color-primary);
+  stroke-width: 2;
+  transition: stroke 0.3s ease;
+}
+
+.promo-popup-close:hover svg {
+  stroke: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+============================================ */
+
+/* Tablets - 992px and below */
+@media (max-width: 992px) {
+  .promo-slider-section {
+    margin: 50px 0;
+  }
+
+  .promo-slide img {
+    aspect-ratio: 16/8;
+  }
+
+  .promo-slider-nav {
+    width: 44px;
+    height: 44px;
+  }
+
+  .promo-slider-nav.prev {
+    left: 15px;
+  }
+
+  .promo-slider-nav.next {
+    right: 15px;
+  }
+
+  .promo-notification {
+    width: 300px;
+  }
+}
+
+/* Mobile Landscape - 768px and below */
+@media (max-width: 768px) {
+  .promo-slider-section {
+    margin: 40px 0;
+  }
+
+  .promo-slider-container {
+    padding: 0 15px;
+  }
+
+  .promo-slide img {
+    aspect-ratio: 16/10;
+  }
+
+  .promo-slider-nav {
+    width: 40px;
+    height: 40px;
+  }
+
+  .promo-slider-nav svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .promo-slider-nav.prev {
+    left: 10px;
+  }
+
+  .promo-slider-nav.next {
+    right: 10px;
+  }
+
+  .promo-slider-dots {
+    bottom: 15px;
+    gap: 8px;
+  }
+
+  .promo-slider-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .promo-notification {
+    width: calc(100% - 40px);
+    max-width: 320px;
+    bottom: 20px;
+  }
+
+  .promo-notification.show {
+    right: 20px;
+  }
+
+  .promo-notification-image {
+    height: 140px;
+  }
+}
+
+/* Mobile Portrait - 600px and below */
+@media (max-width: 600px) {
+  .promo-slider-section {
+    margin: 30px 0;
+  }
+
+  .promo-slide img {
+    aspect-ratio: 4/3;
+  }
+
+  .promo-slider-nav {
+    width: 36px;
+    height: 36px;
+  }
+
+  .promo-slider-nav svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .promo-slider-dots {
+    bottom: 12px;
+    gap: 6px;
+  }
+
+  .promo-slider-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .promo-notification {
+    width: calc(100% - 30px);
+  }
+
+  .promo-notification.show {
+    right: 15px;
+  }
+
+  .promo-notification-image {
+    height: 120px;
+  }
+
+  .promo-notification-content {
+    padding: 12px;
+  }
+
+  .promo-notification-title {
+    font-size: 1rem;
+  }
+
+  .promo-notification-text {
+    font-size: 0.85rem;
+  }
+
+  .promo-popup-content {
+    border-radius: 12px;
+  }
+
+  .promo-popup-close {
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Small Mobile - 480px and below */
+@media (max-width: 480px) {
+  .promo-slider-nav {
+    width: 32px;
+    height: 32px;
+  }
+
+  .promo-slider-nav svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .promo-notification-badge {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+
+  .promo-notification-close {
+    width: 26px;
+    height: 26px;
+  }
+
+  .promo-notification-close svg {
+    width: 12px;
+    height: 12px;
+  }
+}
