@@ -1,0 +1,19 @@
+# Redirect www to non-www
+[[redirects]]
+  from = "https://www.kingsfurnituregh.com/*"
+  to = "https://kingsfurnituregh.com/:splat"
+  status = 301
+  force = true
+
+# Force HTTPS
+[[redirects]]
+  from = "http://kingsfurnituregh.com/*"
+  to = "https://kingsfurnituregh.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.kingsfurnituregh.com/*"
+  to = "https://kingsfurnituregh.com/:splat"
+  status = 301
+  force = true
