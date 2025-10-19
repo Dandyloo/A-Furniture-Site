@@ -1,0 +1,466 @@
+/* PROMO POPUP STYLES */
+.promo-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.promo-popup.active {
+  display: flex;
+}
+
+.promo-popup-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.promo-popup-content {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: popupSlideIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes popupSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.promo-popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.promo-popup-close:hover {
+  background: var(--color-primary);
+  transform: rotate(90deg);
+}
+
+.promo-popup-close svg {
+  stroke: var(--color-primary);
+  transition: stroke 0.3s ease;
+}
+
+.promo-popup-close:hover svg {
+  stroke: #ffffff;
+}
+
+.promo-popup-image {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.promo-popup-image:hover {
+  transform: scale(1.02);
+}
+
+.promo-popup-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Exit animation */
+.promo-popup.closing .promo-popup-content {
+  animation: popupSlideOut 0.4s ease forwards;
+}
+
+.promo-popup.closing .promo-popup-overlay {
+  animation: fadeOut 0.4s ease forwards;
+}
+
+@keyframes popupSlideOut {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* PROMO BANNER SECTION */
+.promo-banner-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  overflow: hidden;
+}
+
+.promo-banner-section .container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.promo-header {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.promo-tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.promo-title {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  color: var(--color-primary);
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.promo-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--color-muted);
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.promo-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.promo-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.promo-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.promo-card-image {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
+}
+
+.promo-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.promo-card-image img.loaded {
+  opacity: 1;
+}
+
+.promo-card:hover .promo-card-image img {
+  transform: scale(1.05);
+}
+
+/* Badge for active promos */
+.promo-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(255, 65, 108, 0.4);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.promo-card-content {
+  padding: 25px;
+}
+
+.promo-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.promo-card-description {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.promo-card-date {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.promo-card-date svg {
+  stroke: var(--color-accent);
+}
+
+/* View All Button */
+.promo-view-all {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 14px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.view-all-btn:hover {
+  background: var(--color-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(64, 142, 198, 0.3);
+  color: #ffffff;
+}
+
+.view-all-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.view-all-btn:hover svg {
+  transform: translateX(5px);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets - 992px and below */
+@media (max-width: 992px) {
+  .promo-banner-section {
+    padding: 80px 0;
+  }
+
+  .promo-title {
+    font-size: 2.4rem;
+  }
+
+  .promo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  .promo-popup-content {
+    max-width: 500px;
+  }
+}
+
+/* Mobile Landscape - 768px and below */
+@media (max-width: 768px) {
+  .promo-banner-section {
+    padding: 70px 0;
+  }
+
+  .promo-header {
+    margin-bottom: 40px;
+  }
+
+  .promo-title {
+    font-size: 2rem;
+  }
+
+  .promo-subtitle {
+    font-size: 1rem;
+  }
+
+  .promo-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .promo-card-content {
+    padding: 20px;
+  }
+
+  .promo-card-title {
+    font-size: 1.25rem;
+  }
+
+  .promo-popup-content {
+    max-width: 90%;
+  }
+}
+
+/* Mobile Portrait - 600px and below */
+@media (max-width: 600px) {
+  .promo-banner-section {
+    padding: 60px 0;
+  }
+
+  .promo-tag {
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+  }
+
+  .promo-title {
+    font-size: 1.75rem;
+  }
+
+  .promo-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .promo-card-content {
+    padding: 18px;
+  }
+
+  .promo-card-title {
+    font-size: 1.15rem;
+  }
+
+  .promo-card-description {
+    font-size: 0.9rem;
+  }
+
+  .promo-badge {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+
+  .view-all-btn {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+
+  .promo-popup-close {
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Small Mobile - 480px and below */
+@media (max-width: 480px) {
+  .promo-banner-section {
+    padding: 50px 0;
+  }
+
+  .promo-title {
+    font-size: 1.5rem;
+  }
+
+  .promo-card-content {
+    padding: 15px;
+  }
+
+  .promo-card-title {
+    font-size: 1.05rem;
+  }
+
+  .promo-card-description {
+    font-size: 0.85rem;
+  }
+
+  .promo-card-date {
+    font-size: 0.8rem;
+  }
+}
+
+/* Extra Small Mobile - 375px and below */
+@media (max-width: 375px) {
+  .promo-banner-section {
+    padding: 45px 0;
+  }
+
+  .promo-title {
+    font-size: 1.4rem;
+  }
+
+  .promo-subtitle {
+    font-size: 0.9rem;
+  }
+}
