@@ -1,19 +1,47 @@
-# Redirect www to non-www
+# Netlify Configuration for Best Practices & SEO
+
+[build]
+  publish = "."
+
+# Security headers for Best Practices score
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Security headers
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    
+    # Best Practices: Ensure HTTPS
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# Cache headers for performance
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/javascript/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Force HTTPS redirects
 [[redirects]]
   from = "https://www.kingsfurnituregh.com/*"
   to = "https://kingsfurnituregh.com/:splat"
   status = 301
   force = true
 
-# Force HTTPS
 [[redirects]]
   from = "http://kingsfurnituregh.com/*"
-  to = "https://kingsfurnituregh.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://www.kingsfurnituregh.com/*"
   to = "https://kingsfurnituregh.com/:splat"
   status = 301
   force = true
