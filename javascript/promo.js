@@ -22,7 +22,7 @@ const PROMO_CONFIG = {
       },
       {
         image:
-          "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868229/promo-banner-3_vi0tu4.jpg.jpg",
+          "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868229/promo-banner-3_vi0tu4.jpg",
         alt: "Special Promotion 3",
       },
     ],
