@@ -1,10 +1,3 @@
-// Dev tool: Press 'G' key to toggle grid overlay (remove in production)
-document.addEventListener("keydown", (e) => {
-  if (e.key === "g" || e.key === "G") {
-    document.body.classList.toggle("show-grid");
-  }
-});
-
 // Cache DOM elements for better performance
 const header = document.querySelector('.site-header');
 const scrollTopBtn = document.getElementById('scrollTopBtn');
