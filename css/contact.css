@@ -536,6 +536,11 @@ body {
     padding: 70px 0 50px;
   }
 
+  .contact-info-section .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .contact-card {
     grid-column: span 6;
     padding: 35px 25px;
@@ -563,6 +568,11 @@ body {
     padding: 70px 0;
   }
 
+  .contact-form-section .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .form-title,
   .faq-title {
     font-size: 2rem;
@@ -574,6 +584,8 @@ body {
 
   .contact-form {
     padding: 40px 30px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .form-row {
@@ -581,8 +593,25 @@ body {
     gap: 0;
   }
 
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .map-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .faq-section {
     padding: 70px 0;
+  }
+
+  .faq-section .container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .faq-header {
@@ -609,6 +638,11 @@ body {
     padding: 60px 0 40px;
   }
 
+  .contact-info-section .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .contact-card {
     grid-column: span 6;
     padding: 30px 20px;
@@ -632,6 +666,11 @@ body {
     padding: 60px 0;
   }
 
+  .contact-form-section .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .form-tag,
   .faq-tag {
     font-size: 0.8rem;
@@ -649,7 +688,7 @@ body {
   }
 
   .contact-form {
-    padding: 35px 25px;
+    padding: 35px 22px;
   }
 
   .form-group label {
@@ -660,7 +699,7 @@ body {
   .form-group select,
   .form-group textarea {
     font-size: 0.95rem;
-    padding: 12px 16px;
+    padding: 12px 14px;
   }
 
   .submit-btn {
@@ -672,7 +711,7 @@ body {
 
   .map-container {
     min-height: 350px;
-    padding: 50px 30px;
+    padding: 50px 25px;
   }
 
   .map-placeholder svg {
@@ -692,8 +731,13 @@ body {
     padding: 60px 0;
   }
 
+  .faq-section .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .faq-item {
-    padding: 30px 25px;
+    padding: 30px 22px;
   }
 
   .faq-question {
@@ -705,7 +749,7 @@ body {
   }
 }
 
-/* Small Mobile - 480px and below */
+/* Small Mobile - 480px and below (iPhone 12/13 Pro Max and similar) */
 @media (max-width: 480px) {
   .page-hero {
     height: 32vh;
@@ -725,14 +769,19 @@ body {
     padding: 50px 0 35px;
   }
 
+  .contact-info-section .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
   .contact-cards-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 18px;
   }
 
   .contact-card {
     grid-column: span 1;
-    padding: 28px 20px;
+    padding: 26px 18px;
   }
 
   .contact-card-icon {
@@ -747,6 +796,11 @@ body {
 
   .contact-form-section {
     padding: 50px 0;
+  }
+
+  .contact-form-section .container {
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
   .form-tag,
@@ -765,17 +819,24 @@ body {
   }
 
   .contact-form {
-    padding: 30px 20px;
+    padding: 28px 16px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 11px 13px;
+    font-size: 0.93rem;
   }
 
   .submit-btn {
-    padding: 13px 28px;
+    padding: 13px 26px;
     font-size: 0.9rem;
   }
 
   .map-container {
     min-height: 320px;
-    padding: 40px 25px;
+    padding: 38px 20px;
   }
 
   .map-placeholder svg {
@@ -795,8 +856,13 @@ body {
     padding: 50px 0;
   }
 
+  .faq-section .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
   .faq-item {
-    padding: 25px 20px;
+    padding: 24px 18px;
   }
 
   .faq-question {
@@ -823,8 +889,18 @@ body {
     padding: 45px 0 30px;
   }
 
+  .contact-info-section .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
   .contact-card {
-    padding: 25px 18px;
+    padding: 24px 16px;
+  }
+
+  .contact-form-section .container {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .form-title,
@@ -833,19 +909,25 @@ body {
   }
 
   .contact-form {
-    padding: 25px 18px;
+    padding: 24px 14px;
   }
 
   .map-container {
     min-height: 300px;
+    padding: 35px 18px;
   }
 
   .faq-section {
     padding: 45px 0;
   }
 
+  .faq-section .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
   .faq-item {
-    padding: 22px 18px;
+    padding: 22px 16px;
   }
 
   .faq-question {
