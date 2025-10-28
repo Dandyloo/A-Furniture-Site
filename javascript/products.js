@@ -220,22 +220,8 @@ const productsDatabase = [
 
   // BEDROOM PRODUCTS
   {
-    id: 13,
-    name: "BR-001",
-    category: "bedroom",
-    images: [
-      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870349/bedroom-9a_xmwzcr.jpg",
-      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870351/bedroom-9b_zdkb6v.webp",
-      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870353/bedroom-9c_hlqxr7.jpg",
-      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870355/bedroom-9d_h4upnr.jpg",
-      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870358/bedroom-9e_f0rly7.jpg",
-      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870361/bedroom-9f_mddga3.jpg",
-    ],
-    description: "We'll place a description here",
-  },
-  {
     id: 14,
-    name: "BR-002",
+    name: "BR-001",
     category: "bedroom",
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870287/bedroom-10a.jpg_lmmrho.jpg",
@@ -245,21 +231,8 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 15,
-    name: "BR-003",
-    category: "bedroom",
-    images: [
-      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870300/bedroom-11a_flqxv7.jpg",
-      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870305/bedroom-11b_cldumm.jpg",
-      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870310/bedroom-11c_yuqjxa.jpg",
-      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870315/bedroom-11d_yehltg.jpg",
-      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870317/bedroom-11e_ha71g2.jpg",
-    ],
-    description: "We'll place a description here",
-  },
-  {
     id: 16,
-    name: "BR-004",
+    name: "BR-002",
     category: "bedroom",
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870320/bedroom-12_vq6ou0.jpg",
@@ -269,7 +242,7 @@ const productsDatabase = [
   },
   {
     id: 17,
-    name: "BR-005",
+    name: "BR-003",
     category: "bedroom",
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870325/bedroom-2a_krlum9.jpg",
@@ -280,7 +253,7 @@ const productsDatabase = [
   },
   {
     id: 18,
-    name: "BR-006",
+    name: "BR-004",
     category: "bedroom",
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760870336/bedroom-4_m5tnix.jpg",
