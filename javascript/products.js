@@ -503,6 +503,121 @@ const productsDatabase = [
     description:
       "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
   },
+  {
+    id: 39,
+    name: "OS-004",
+    category: "office",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762104902/5_y0on9v.png",
+    ],
+    description:
+      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+  },
+  {
+    id: 40,
+    name: "OS-005",
+    category: "office",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762104902/7_eyazoj.png",
+    ],
+    description:
+      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+  },
+    {
+    id: 41,
+    name: "OS-006",
+    category: "office",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762104901/9_yaeo8q.png",
+    ],
+    description:
+      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+  },
+  {
+    id: 42,
+    name: "OS-007",
+    category: "office",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762104900/8_bei6k2.png",
+    ],
+    description:
+      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+  },
+  {
+    id: 43,
+    name: "OS-008",
+    category: "office",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762104896/2_kyzwiv.png",
+    ],
+    description:
+      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+  },
+  {
+    id: 44,
+    name: "OS-009",
+    category: "office",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762104895/4_znfph7.png",
+    ],
+    description:
+      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+  }, 
+  {
+    id: 45,
+    name: "OS-010",
+    category: "office",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762104893/3_lkyats.png",
+    ],
+    description:
+      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+  },        
+  
+  
+  
+  
+  // OUTDOOR PRODUCTS
+  {
+    id: 301,
+    name: "OT-001",
+    category: "outdoor",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762105003/1_hxryim.png",
+    ],
+    description:
+      "We'll place a description here.",
+  },
+    {
+    id: 302,
+    name: "OT-002",
+    category: "outdoor",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762106260/3_nvpy3q.jpg",
+    ],
+    description:
+      "We'll place a description here.",
+  },
+  {
+    id: 303,
+    name: "OT-003",
+    category: "outdoor",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762106258/2_u5vezj.jpg",
+    ],
+    description:
+      "We'll place a description here.",
+  },
+  {
+    id: 304,
+    name: "OT-004",
+    category: "outdoor",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762106258/1_somocj.jpg",
+    ],
+    description:
+      "We'll place a description here.",
+  },  
 
   // ADD MORE PRODUCTS HERE
   // Copy the template below and fill in your product details:
@@ -548,6 +663,7 @@ const categoryNames = {
   dining: "Dining",
   office: "Office",
   kitchen: "Kitchen",
+  outdoor: "Outdoor",
 };
 
 // INITIALIZE
