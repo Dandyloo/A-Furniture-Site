@@ -78,7 +78,7 @@ function filterProducts() {
 const productsDatabase = [
   // LIVING ROOM PRODUCTS
   {
-    id: 1,
+    id: 101,
     name: "LR-001",
     category: "living-room",
     images: [
@@ -91,7 +91,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 2,
+    id: 102,
     name: "LR-002",
     category: "living-room",
     images: [
@@ -104,7 +104,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 3,
+    id: 103,
     name: "LR-003",
     category: "living-room",
     images: [
@@ -118,7 +118,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 4,
+    id: 104,
     name: "LR-004",
     category: "living-room",
     images: [
@@ -129,7 +129,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 5,
+    id: 105,
     name: "LR-005",
     category: "living-room",
     images: [
@@ -141,7 +141,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 6,
+    id: 106,
     name: "LR-006",
     category: "living-room",
     images: [
@@ -154,7 +154,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 7,
+    id: 107,
     name: "LR-007",
     category: "living-room",
     images: [
@@ -166,7 +166,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 8,
+    id: 108,
     name: "LR-008",
     category: "living-room",
     images: [
@@ -177,7 +177,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 9,
+    id: 109,
     name: "LR-009",
     category: "living-room",
     images: [
@@ -187,7 +187,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 10,
+    id: 110,
     name: "LR-010",
     category: "living-room",
     images: [
@@ -198,7 +198,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 11,
+    id: 111,
     name: "LR-011",
     category: "living-room",
     images: [
@@ -209,7 +209,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 12,
+    id: 112,
     name: "LR-012",
     category: "living-room",
     images: [
@@ -217,10 +217,86 @@ const productsDatabase = [
     ],
     description: "We'll place a description here",
   },
+  {
+    id: 113,
+    name: "LR-013",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762190077/10_saaihd.png",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762190082/HE9A1677_hcdnyt.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762190073/HE9A1675_eynaub.jpg"
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 114,
+    name: "LR-014",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762190512/17_scmq5d.png",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762190514/HE9A1812_aq1xwp.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 115,
+    name: "LR-015",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762190641/25_niprrx.png",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 116,
+    name: "LR-016",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762190635/26_o9kqqg.png",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 117,
+    name: "LR-017",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762190632/28_h8jizj.png",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 118,
+    name: "LR-018",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762190627/29_wrnxtm.png",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 119,
+    name: "LR-019",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762190622/24_hq1h1j.png",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 120,
+    name: "LR-020",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762190871/20_shh5bn.png",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762190872/19_vbilzb.png"
+    ],
+    description: "We'll place a description here",
+  },
 
   // BEDROOM PRODUCTS
   {
-    id: 14,
+    id: 201,
     name: "BR-001",
     category: "bedroom",
     images: [
@@ -231,7 +307,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 16,
+    id: 202,
     name: "BR-002",
     category: "bedroom",
     images: [
@@ -241,7 +317,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 17,
+    id: 203,
     name: "BR-003",
     category: "bedroom",
     images: [
@@ -252,7 +328,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 18,
+    id: 204,
     name: "BR-004",
     category: "bedroom",
     images: [
@@ -265,9 +341,19 @@ const productsDatabase = [
     ],
     description: "We'll place a description here",
   },
+  {
+    id: 205,
+    name: "BR-005",
+    category: "bedroom",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762191592/18_n1iwfx.png",
+    ],
+    description: "We'll place a description here",
+  },
+
   // KITCHEN PRODUCTS
   {
-    id: 19,
+    id: 301,
     name: "KS-001",
     category: "kitchen",
     images: [
@@ -279,7 +365,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 20,
+    id: 302,
     name: "KS-002",
     category: "kitchen",
     images: [
@@ -291,7 +377,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 21,
+    id: 303,
     name: "KS-003",
     category: "kitchen",
     images: [
@@ -304,7 +390,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 22,
+    id: 304,
     name: "KS-004",
     category: "kitchen",
     images: [
@@ -314,7 +400,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 23,
+    id: 305,
     name: "KS-005",
     category: "kitchen",
     images: [
@@ -326,7 +412,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 24,
+    id: 306,
     name: "KS-006",
     category: "kitchen",
     images: [
@@ -336,7 +422,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 25,
+    id: 307,
     name: "KS-007",
     category: "kitchen",
     images: [
@@ -350,7 +436,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 26,
+    id: 308,
     name: "KS-008",
     category: "kitchen",
     images: [
@@ -361,7 +447,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 27,
+    id: 309,
     name: "KS-009",
     category: "kitchen",
     images: [
@@ -373,7 +459,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 28,
+    id: 310,
     name: "KS-010",
     category: "kitchen",
     images: [
@@ -383,7 +469,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 29,
+    id: 311,
     name: "KS-011",
     category: "kitchen",
     images: [
@@ -394,7 +480,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 30,
+    id: 312,
     name: "KS-012",
     category: "kitchen",
     images: [
@@ -408,7 +494,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 31,
+    id: 313,
     name: "KS-013",
     category: "kitchen",
     images: [
@@ -420,7 +506,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 32,
+    id: 314,
     name: "KS-014",
     category: "kitchen",
     images: [
@@ -430,7 +516,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 33,
+    id: 315,
     name: "KS-015",
     category: "kitchen",
     images: [
@@ -442,7 +528,7 @@ const productsDatabase = [
     description: "We'll place a description here",
   },
   {
-    id: 34,
+    id: 316,
     name: "KS-016",
     category: "kitchen",
     images: [
@@ -456,7 +542,7 @@ const productsDatabase = [
 
   // DINING PRODUCTS
   {
-    id: 35,
+    id: 401,
     name: "DS-001",
     category: "dining",
     images: [
@@ -469,7 +555,7 @@ const productsDatabase = [
 
   // OFFICE PRODUCTS
   {
-    id: 36,
+    id: 501,
     name: "OS-001",
     category: "office",
     images: [
@@ -482,7 +568,7 @@ const productsDatabase = [
       "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
   },
   {
-    id: 37,
+    id: 502,
     name: "OS-002",
     category: "office",
     images: [
@@ -490,10 +576,10 @@ const productsDatabase = [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868273/office-set-2a_r1g3gq.jpg",
     ],
     description:
-      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+      "",
   },
   {
-    id: 38,
+    id: 503,
     name: "OS-003",
     category: "office",
     images: [
@@ -501,82 +587,115 @@ const productsDatabase = [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1760868280/office-set-3b_nsqwzj.jpg",
     ],
     description:
-      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+      "",
   },
   {
-    id: 39,
+    id: 504,
     name: "OS-004",
     category: "office",
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762104902/5_y0on9v.png",
     ],
     description:
-      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+      "",
   },
   {
-    id: 40,
+    id: 505,
     name: "OS-005",
     category: "office",
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762104902/7_eyazoj.png",
     ],
     description:
-      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+      "",
   },
   {
-    id: 41,
+    id: 506,
     name: "OS-006",
     category: "office",
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762104901/9_yaeo8q.png",
     ],
     description:
-      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+      "",
   },
   {
-    id: 42,
+    id: 507,
     name: "OS-007",
     category: "office",
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762104900/8_bei6k2.png",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762189981/HE9A1714_sw6jlb.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762189957/HE9A1712_xraxsb.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762189955/HE9A1713_qicnaq.jpg"
     ],
     description:
-      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+      "",
   },
   {
-    id: 43,
+    id: 508,
     name: "OS-008",
     category: "office",
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762104896/2_kyzwiv.png",
     ],
     description:
-      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+      "",
   },
   {
-    id: 44,
+    id: 509,
     name: "OS-009",
     category: "office",
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762104895/4_znfph7.png",
     ],
     description:
-      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+      "",
   },
   {
-    id: 45,
+    id: 510,
     name: "OS-010",
     category: "office",
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762104893/3_lkyats.png",
     ],
     description:
-      "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
+      "",
+  },
+  {
+    id: 511,
+    name: "OS-011",
+    category: "office",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762191433/23_c6tq9x.png",
+    ],
+    description:
+      "",
+  },
+  {
+    id: 512,
+    name: "OS-012",
+    category: "office",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762191428/21_jxke1w.png",
+    ],
+    description:
+      "",
+  },
+  {
+    id: 513,
+    name: "OS-013",
+    category: "office",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762191423/22_xigfaz.png",
+    ],
+    description:
+      "",
   },
 
   // OUTDOOR PRODUCTS
   {
-    id: 301,
+    id: 601,
     name: "OT-001",
     category: "outdoor",
     images: [
@@ -585,7 +704,7 @@ const productsDatabase = [
     description: "We'll place a description here.",
   },
   {
-    id: 302,
+    id: 602,
     name: "OT-002",
     category: "outdoor",
     images: [
@@ -594,7 +713,7 @@ const productsDatabase = [
     description: "We'll place a description here.",
   },
   {
-    id: 303,
+    id: 603,
     name: "OT-003",
     category: "outdoor",
     images: [
@@ -603,7 +722,7 @@ const productsDatabase = [
     description: "We'll place a description here.",
   },
   {
-    id: 304,
+    id: 604,
     name: "OT-004",
     category: "outdoor",
     images: [
