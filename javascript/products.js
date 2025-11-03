@@ -523,7 +523,7 @@ const productsDatabase = [
     description:
       "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
   },
-    {
+  {
     id: 41,
     name: "OS-006",
     category: "office",
@@ -562,7 +562,7 @@ const productsDatabase = [
     ],
     description:
       "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
-  }, 
+  },
   {
     id: 45,
     name: "OS-010",
@@ -572,11 +572,8 @@ const productsDatabase = [
     ],
     description:
       "Professional office furniture including desk and ergonomic chair. Designed to boost productivity and comfort during work hours.",
-  },        
-  
-  
-  
-  
+  },
+
   // OUTDOOR PRODUCTS
   {
     id: 301,
@@ -585,18 +582,16 @@ const productsDatabase = [
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762105003/1_hxryim.png",
     ],
-    description:
-      "We'll place a description here.",
+    description: "We'll place a description here.",
   },
-    {
+  {
     id: 302,
     name: "OT-002",
     category: "outdoor",
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762106260/3_nvpy3q.jpg",
     ],
-    description:
-      "We'll place a description here.",
+    description: "We'll place a description here.",
   },
   {
     id: 303,
@@ -605,8 +600,7 @@ const productsDatabase = [
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762106258/2_u5vezj.jpg",
     ],
-    description:
-      "We'll place a description here.",
+    description: "We'll place a description here.",
   },
   {
     id: 304,
@@ -615,9 +609,8 @@ const productsDatabase = [
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762106258/1_somocj.jpg",
     ],
-    description:
-      "We'll place a description here.",
-  },  
+    description: "We'll place a description here.",
+  },
 
   // ADD MORE PRODUCTS HERE
   // Copy the template below and fill in your product details:
