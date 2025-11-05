@@ -293,8 +293,152 @@ const productsDatabase = [
     ],
     description: "We'll place a description here",
   },
+  {
+    id: 121,
+    name: "LR-021",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369334/5771497007519305141_120_kxc2uq.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 122,
+    name: "LR-022",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369328/5771497007519305125_120_t4bxja.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 123,
+    name: "LR-023",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369328/5771497007519305140_120_ti1sia.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 124,
+    name: "LR-024",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369328/5771497007519305134_120_h3svic.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 125,
+    name: "LR-025",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369327/5771497007519305142_120_k237dx.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 126,
+    name: "LR-026",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369322/5771497007519305139_120_scnyoz.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 127,
+    name: "LR-027",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369322/5771497007519305138_120_rbm7rn.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 128,
+    name: "LR-028",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369321/5771497007519305137_120_qaiwq9.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 129,
+    name: "LR-029",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369313/5771497007519305136_120_c8ijq1.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 130,
+    name: "LR-030",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369312/5771497007519305135_120_dlvovt.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 131,
+    name: "LR-031",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369312/5771497007519305132_120_lqmpgh.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 132,
+    name: "LR-032",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369310/5771497007519305127_120_ppbddi.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 133,
+    name: "LR-033",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369310/5771497007519305126_120_kqtvu3.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 134,
+    name: "LR-034",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369311/5771497007519305133_120_uoyuwp.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 135,
+    name: "LR-035",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369309/5771497007519305143_120_x4aydz.jpg",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 136,
+    name: "LR-036",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762369284/5771497007519305124_120_qcbsot.jpg",
+    ],
+    description: "We'll place a description here",
+  },
 
-  // BEDROOM PRODUCTS
+ // BEDROOM PRODUCTS
   {
     id: 201,
     name: "BR-001",
