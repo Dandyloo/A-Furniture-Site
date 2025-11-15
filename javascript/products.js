@@ -437,6 +437,26 @@ const productsDatabase = [
     ],
     description: "We'll place a description here",
   },
+  {
+    id: 137,
+    name: "LR-037",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762191433/23_c6tq9x.png",
+    ],
+    description:
+      "",
+  },
+  {
+    id: 138,
+    name: "LR-038",
+    category: "living-room",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762191428/21_jxke1w.png",
+    ],
+    description:
+      "",
+  },
 
  // BEDROOM PRODUCTS
   {
@@ -494,6 +514,94 @@ const productsDatabase = [
     ],
     description: "We'll place a description here",
   },
+  {
+    id: 206,
+    name: "BR-006",
+    category: "bedroom",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763233555/31_g8o4ke.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763233555/30_m6cs0j.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763233555/33_pv4oyv.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763233555/32_iusaa1.jpg"
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 207,
+    name: "BR-007",
+    category: "bedroom",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763233755/34_dzv06k.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763233755/35_rmalh5.jpg"
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 208,
+    name: "BR-008",
+    category: "bedroom",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763233995/36_mzwlbk.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763233997/37_cf8oek.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763233997/38_mvbgqz.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763233996/39_d3tau4.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763233995/40_v3awen.jpg"
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 209,
+    name: "BR-009",
+    category: "bedroom",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763234243/41_gwejuj.png",
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 210,
+    name: "BR-010",
+    category: "bedroom",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763234470/42_zp3b0l.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763234468/43_pk2abe.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763234467/44_ygz5bf.jpg"
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 211,
+    name: "BR-011",
+    category: "bedroom",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763234992/47_j2nm8y.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763234750/45_xk6egn.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763234751/46_gogpbh.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763234749/48_bsoaig.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763234748/49_ztcpto.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763234763/50_ffl839.jpg"
+    ],
+    description: "We'll place a description here",
+  },
+  {
+    id: 212,
+    name: "BR-012",
+    category: "bedroom",
+    images: [
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763235003/51_giwjxs.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763234997/52_j3ltdr.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763234995/53_lg4hb4.jpg",
+      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1763234995/54_pzmard.jpg"
+    ],
+    description: "We'll place a description here",
+  },
+
+
+
+
+
+
+
 
   // KITCHEN PRODUCTS
   {
@@ -809,26 +917,6 @@ const productsDatabase = [
   {
     id: 511,
     name: "OS-011",
-    category: "office",
-    images: [
-      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762191433/23_c6tq9x.png",
-    ],
-    description:
-      "",
-  },
-  {
-    id: 512,
-    name: "OS-012",
-    category: "office",
-    images: [
-      "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762191428/21_jxke1w.png",
-    ],
-    description:
-      "",
-  },
-  {
-    id: 513,
-    name: "OS-013",
     category: "office",
     images: [
       "https://res.cloudinary.com/djmyiuu5k/image/upload/v1762191423/22_xigfaz.png",
