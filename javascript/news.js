@@ -191,6 +191,26 @@ const articlesDatabase = [
 
       <p>The donated furniture includes desks and chairs specifically designed for school use, ensuring that students have appropriate seating and workspace for their studies.</p>
     `
+  },
+  {
+    id: 6,
+    title: "Kings Furniture Honoured at 2025 Ghana Impactful Companies Awards",
+    date: "2025-11-23",
+    image: "https://res.cloudinary.com/djmyiuu5k/image/upload/v1764172356/TKD-Social-Business-Awards-_d5poj1.jpg",
+    excerpt: "Kings Furniture has earned national recognition after winning the Excellence in Furniture Manufacturing & Industrial Innovation award at the 2025 Ghana Impactful Companies Awards.",
+    gallery: [
+              "https://res.cloudinary.com/djmyiuu5k/image/upload/v1764172356/TKD-Social-Business-Awards-_d5poj1.jpg",
+              "https://res.cloudinary.com/djmyiuu5k/image/upload/v1764172356/TKD-Social-Business-Awards-1-1_tgatmv.jpg"
+    ], 
+    content: `
+      <p>The annual awards celebrate organisations that demonstrate outstanding contributions to Ghana’s economic growth through innovation, integrity, and social responsibility. Kings Furniture emerged as one of <strong>23 distinguished companies</strong> selected from a competitive pool of nominees.</p>
+
+      <p>Mr. Ekow Nkrumah-Bentum, Chief Executive Officer of Kings Group of Companies, expressed appreciation for the honour. He stated that the award reflects the company’s unwavering dedication to quality, innovation, and its broader impact on Ghana’s corporate ecosystem. “This achievement reaffirms our leadership in the furniture manufacturing industry,” he added.</p>
+
+      <p>This year’s ceremony, themed <strong>“Increasing the Social and Economic Benefits of Business Activities in Ghana,”</strong> brought together top business executives, policymakers, investors, and media personalities to celebrate excellence across various sectors.</p>
+      
+      <p>Kings Furniture’s latest accolade further strengthens its reputation as a frontrunner in Ghana’s manufacturing landscape.</P>
+    `
   }
 ];
 
